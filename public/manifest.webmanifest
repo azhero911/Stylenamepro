@@ -1,0 +1,21 @@
+{
+  "name": "NameStylePro - Stylish Name Generator",
+  "short_name": "NameStylePro",
+  "description": "Free stylish name generator for Free Fire, PUBG & socials. 1000+ Unicode styles with 1-tap copy.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#7C3AED",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
