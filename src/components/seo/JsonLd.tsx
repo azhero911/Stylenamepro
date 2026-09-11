@@ -27,7 +27,7 @@ export function WebAppJsonLd({ name, description, url }: WebAppSchemaProps) {
     },
     author: {
       '@type': 'Person',
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Faisalabad',
@@ -74,7 +74,7 @@ export function ArticleJsonLd({
   description,
   url,
   publishedAt,
-  authorName = 'Arham Zahid',
+  authorName = 'AZDeveloper',
 }: {
   title: string;
   description: string;
@@ -103,7 +103,7 @@ export function ArticleJsonLd({
     publisher: {
       '@type': 'Organization',
       name: 'NameStylePro',
-      url: 'https://namestylepro.com',
+      url: 'https://stylenamepro.vercel.app',
     },
   };
 

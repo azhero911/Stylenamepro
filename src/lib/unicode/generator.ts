@@ -19,7 +19,7 @@ export const RANDOM_NAME_POOL = [
   'Shadow', 'Viper', 'Ghost', 'Thunder', 'Phoenix', 'Titan', 'Falcon', 'Raptor',
   'Alpha', 'Dragon', 'Ninja', 'Reaper', 'Cyber', 'King', 'Legend', 'Toxic',
   'Demon', 'Frost', 'Hunter', 'Matrix', 'Blaze', 'Wolf', 'Storm', 'Maverick',
-  'Badshah', 'Sher', 'Sardar', 'Malang', 'Khan', 'Zaid', 'Arham', 'Tiger',
+  'Badshah', 'Sher', 'Sardar', 'Malang', 'Khan', 'Zaid', 'Striker', 'Tiger',
 ];
 
 export function getRandomSampleName(): string {

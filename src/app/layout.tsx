@@ -6,8 +6,7 @@ import { CopyToast } from '@/components/ui/CopyToast';
 import { WebAppJsonLd } from '@/components/seo/JsonLd';
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://stylenamepro.vercel.app');
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://stylenamepro.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -26,8 +25,8 @@ export const metadata: Metadata = {
     'invisible name free fire',
     'stylish name copy paste',
   ],
-  authors: [{ name: 'Arham Zahid' }],
-  creator: 'Arham Zahid',
+  authors: [{ name: 'AZDeveloper' }],
+  creator: 'AZDeveloper',
   publisher: 'NameStylePro',
   icons: {
     icon: '/icon.svg',
@@ -84,7 +83,7 @@ export default function RootLayout({
         <WebAppJsonLd
           name="NameStylePro"
           description="Free stylish name generator for Free Fire, PUBG Mobile, BGMI, and social media profiles."
-          url="https://namestylepro.com"
+          url="https://stylenamepro.vercel.app"
         />
         {/* Service Worker Registration */}
         <script

@@ -12,7 +12,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: '6 min read',
     publishedAt: '2026-03-01',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
       location: 'Faisalabad, Pakistan',
     },
@@ -61,7 +61,7 @@ Use our **[Free Fire Name Generator](/free-fire-names)** to test your name lengt
     readTime: '5 min read',
     publishedAt: '2026-03-02',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
       location: 'Faisalabad, Pakistan',
     },
@@ -108,7 +108,7 @@ Remember: PUBG Mobile allows up to **16 characters**, offering more room for cre
     readTime: '4 min read',
     publishedAt: '2026-03-03',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Tech & Gaming Researcher',
       location: 'Faisalabad, Pakistan',
     },
@@ -148,7 +148,7 @@ If the game reports *"Name already taken"*, our tool provides an automated varia
     readTime: '4 min read',
     publishedAt: '2026-03-04',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
       location: 'Faisalabad, Pakistan',
     },
@@ -181,7 +181,7 @@ Once in your inventory, go to your profile, click your name, paste your new desi
     readTime: '5 min read',
     publishedAt: '2026-03-05',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Social Media Strategist',
       location: 'Faisalabad, Pakistan',
     },
@@ -216,7 +216,7 @@ Check out our **[Instagram Fonts Generator](/instagram-names)** to copy clean ae
     readTime: '5 min read',
     publishedAt: '2026-03-06',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
       location: 'Faisalabad, Pakistan',
     },
@@ -250,7 +250,7 @@ Generate unique team badges and squad prefixes with our **[Clan Name Generator](
     readTime: '4 min read',
     publishedAt: '2026-03-07',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Social Media Strategist',
       location: 'Faisalabad, Pakistan',
     },
@@ -282,7 +282,7 @@ WhatsApp is used by over 2.5 billion people daily. By applying Unicode font styl
     readTime: '5 min read',
     publishedAt: '2026-03-08',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
       location: 'Faisalabad, Pakistan',
     },
@@ -308,7 +308,7 @@ Browse our **[PUBG & BGMI Tool](/pubg-names)** to craft your personalized BGMI h
     readTime: '4 min read',
     publishedAt: '2026-03-09',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
       location: 'Faisalabad, Pakistan',
     },
@@ -332,7 +332,7 @@ Recruiting top-tier players in Free Fire requires a prestigious Guild Name. In t
     readTime: '4 min read',
     publishedAt: '2026-03-10',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
       location: 'Faisalabad, Pakistan',
     },
@@ -356,7 +356,7 @@ In Mobile Legends: Bang Bang, reaching Mythic Glory is an achievement, and your 
     readTime: '4 min read',
     publishedAt: '2026-03-11',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Social Media Strategist',
       location: 'Faisalabad, Pakistan',
     },
@@ -380,7 +380,7 @@ TikTok's algorithm favors profiles with high engagement and aesthetic appeal. By
     readTime: '5 min read',
     publishedAt: '2026-03-11',
     author: {
-      name: 'Arham Zahid',
+      name: 'AZDeveloper',
       role: 'Software Engineer',
       location: 'Faisalabad, Pakistan',
     },

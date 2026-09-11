@@ -5,7 +5,7 @@ import { ShieldCheck, MapPin, Sparkles, Cpu, Award } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'About Us — NameStylePro Creator & Mission',
   description:
-    'Learn about NameStylePro, an open web utility engineered by Arham Zahid in Faisalabad, Pakistan, to provide free instant Unicode styling for global gamers.',
+    'Learn about NameStylePro, an open web utility engineered by AZDeveloper in Faisalabad, Pakistan, to provide free instant Unicode styling for global gamers.',
 };
 
 export default function AboutPage() {
@@ -64,7 +64,7 @@ export default function AboutPage() {
             AZ
           </div>
           <div className="space-y-1 text-sm md:text-base">
-            <h3 className="font-bold text-slate-900 text-lg">Arham Zahid</h3>
+            <h3 className="font-bold text-slate-900 text-lg">AZDeveloper</h3>
             <p className="text-slate-600">Lead Developer & Esports Tools Architect</p>
             <p className="text-xs text-slate-500 flex items-center gap-1 pt-1">
               <MapPin className="w-3.5 h-3.5 text-brand-600" />
