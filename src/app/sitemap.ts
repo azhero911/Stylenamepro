@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 import { getAllBlogSlugs } from '@/data/blog-posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Always use the primary production domain so Google Search Console validates the sitemap host
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://stylenamepro.vercel.app';
+  // Primary production domain
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.namestylepro.online';
   const now = new Date();
 
   // Static tool & landing pages

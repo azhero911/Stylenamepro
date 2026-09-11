@@ -6,7 +6,7 @@ import { CopyToast } from '@/components/ui/CopyToast';
 import { WebAppJsonLd } from '@/components/seo/JsonLd';
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://stylenamepro.vercel.app';
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://www.namestylepro.online';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://namestylepro.com',
+    url: 'https://www.namestylepro.online',
     siteName: 'NameStylePro',
     title: 'NameStylePro — Free Stylish Name Generator (Free Fire, PUBG & Socials)',
     description:
@@ -83,7 +83,7 @@ export default function RootLayout({
         <WebAppJsonLd
           name="NameStylePro"
           description="Free stylish name generator for Free Fire, PUBG Mobile, BGMI, and social media profiles."
-          url="https://stylenamepro.vercel.app"
+          url={siteUrl}
         />
         {/* Service Worker Registration */}
         <script

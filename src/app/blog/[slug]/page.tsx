@@ -144,7 +144,7 @@ export default function BlogPostPage({ params }: PageProps) {
       <ArticleJsonLd
         title={post.title}
         description={post.description}
-        url={`https://namestylepro.com/blog/${post.slug}`}
+        url={`https://www.namestylepro.online/blog/${post.slug}`}
         publishedAt={post.publishedAt}
         authorName={post.author.name}
       />

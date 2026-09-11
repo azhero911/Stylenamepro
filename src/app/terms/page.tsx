@@ -16,9 +16,9 @@ export default function TermsPage() {
 
       <div className="space-y-6 text-base md:text-lg">
         <section className="space-y-3">
-          <h2 className="text-xl font-bold text-slate-900">1. Acceptance of Terms</h2>
+          <h2 className="text-xl font-bold text-slate-900">1. Agreement to Terms</h2>
           <p>
-            By accessing or using NameStylePro (namestylepro.com), you agree to be bound by these Terms of Service. If you do not agree to all terms and conditions, you may not use our service.
+            By accessing or using NameStylePro (namestylepro.online), you agree to be bound by these Terms of Service. If you do not agree to all terms and conditions, you may not use our service.
           </p>
         </section>
 

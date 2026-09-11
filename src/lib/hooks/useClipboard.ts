@@ -60,7 +60,7 @@ export function useClipboard() {
 
   // WhatsApp share link builder with UTF-safe URL encoding
   const getWhatsAppShareUrl = useCallback((styledText: string) => {
-    const message = `Check out my new stylish name: ${styledText}\n\nGenerated for free at NameStylePro: https://namestylepro.com`;
+    const message = `Check out my new stylish name: ${styledText}\n\nGenerated for free at NameStylePro: https://www.namestylepro.online`;
     return `https://wa.me/?text=${encodeURIComponent(message)}`;
   }, []);
 

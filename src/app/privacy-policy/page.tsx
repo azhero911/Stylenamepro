@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-slate-900">1. Overview</h2>
           <p>
-            At <strong>NameStylePro</strong> (accessible via namestylepro.com), accessible to visitors globally, the privacy of our visitors is of utmost importance. This Privacy Policy document outlines the types of information collected and how it is used.
+            At <strong>NameStylePro</strong> (accessible via namestylepro.online), accessible to visitors globally, the privacy of our visitors is of utmost importance. This Privacy Policy document outlines the types of information collected and how it is used.
           </p>
         </section>
 
@@ -35,7 +35,7 @@ export default function PrivacyPolicyPage() {
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-slate-900">3. Google AdSense & Third-Party Cookies</h2>
           <p>
-            Google is a third-party vendor on our site. Google uses cookies, known as DART cookies, to serve ads to our site visitors based on their visit to namestylepro.com and other sites on the internet.
+            Google is a third-party vendor on our site. Google uses cookies, known as DART cookies, to serve ads to our site visitors based on their visit to namestylepro.online and other sites on the internet.
           </p>
           <p>
             Visitors may choose to decline the use of DART cookies by visiting the Google Ad and Content Network Privacy Policy at:
