@@ -57,6 +57,9 @@ export const metadata: Metadata = {
     description: '1000+ fancy font styles, symbols & gaming nicknames. 1-tap copy.',
     images: ['/og-image.png'],
   },
+  verification: {
+    google: 'SlfwyzB-2CCD-w2QJozo4XGN8UTuGAWGHIhtfyd3DpA',
+  },
 };
 
 export const viewport: Viewport = {
@@ -74,6 +77,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <meta
+          name="google-site-verification"
+          content="SlfwyzB-2CCD-w2QJozo4XGN8UTuGAWGHIhtfyd3DpA"
+        />
         <WebAppJsonLd
           name="NameStylePro"
           description="Free stylish name generator for Free Fire, PUBG Mobile, BGMI, and social media profiles."
