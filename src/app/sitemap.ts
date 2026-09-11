@@ -2,7 +2,9 @@ import { MetadataRoute } from 'next';
 import { getAllBlogSlugs } from '@/data/blog-posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://namestylepro.com';
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://stylenamepro.vercel.app');
   const now = new Date();
 
   // Static tool & landing pages

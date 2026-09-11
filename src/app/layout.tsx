@@ -5,8 +5,12 @@ import { Footer } from '@/components/layout/Footer';
 import { CopyToast } from '@/components/ui/CopyToast';
 import { WebAppJsonLd } from '@/components/seo/JsonLd';
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://stylenamepro.vercel.app');
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://namestylepro.com'),
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'NameStylePro — Free Stylish Name Generator for Free Fire, PUBG & Socials',
     template: '%s | NameStylePro',
