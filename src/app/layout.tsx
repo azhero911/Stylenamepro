@@ -6,7 +6,7 @@ import { CopyToast } from '@/components/ui/CopyToast';
 import { WebAppJsonLd } from '@/components/seo/JsonLd';
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://www.namestylepro.online';
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://namestylepro.online';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.namestylepro.online',
+    url: 'https://namestylepro.online',
     siteName: 'NameStylePro',
     title: 'NameStylePro — Free Stylish Name Generator (Free Fire, PUBG & Socials)',
     description:

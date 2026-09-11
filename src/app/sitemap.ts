@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 import { getAllBlogSlugs } from '@/data/blog-posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Primary production domain
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.namestylepro.online';
+  // Primary production domain (non-www)
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://namestylepro.online';
   const now = new Date();
 
   // Static tool & landing pages
