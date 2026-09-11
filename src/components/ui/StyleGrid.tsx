@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
-import { LayoutGrid, List, ZoomIn, ZoomOut } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { LayoutGrid, List, ArrowUp, Zap } from 'lucide-react';
 import { StyleResult } from '@/types';
 import { StyleCard } from './StyleCard';
 
@@ -15,39 +15,28 @@ const FONT_SIZES = [
   { label: 'Extra', class: 'text-2xl md:text-3xl' },
 ];
 
-export function StyleGrid({ styles }: StyleGridProps) {
-  const [visibleCount, setVisibleCount] = useState(60);
-  const [isListView, setIsListView] = useState(false);
-  const [fontScaleIndex, setFontScaleIndex] = useState(0); // 0 = normal (18-20px), 1 = large (20-24px), 2 = extra (24-28px)
-  const sentinelRef = useRef<HTMLDivElement>(null);
+const INITIAL_BATCH = 24;
+const CHUNK_SIZE = 24;
 
-  // Reset pagination when filter/category changes
+export function StyleGrid({ styles }: StyleGridProps) {
+  const [visibleCount, setVisibleCount] = useState(INITIAL_BATCH);
+  const [isListView, setIsListView] = useState(false);
+  const [fontScaleIndex, setFontScaleIndex] = useState(0); // 0 = normal, 1 = large, 2 = extra
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  // Reset pagination to 24 when category or input changes
   useEffect(() => {
-    setVisibleCount(60);
+    setVisibleCount(INITIAL_BATCH);
   }, [styles]);
 
-  // Progressive Chunk Loading with IntersectionObserver
+  // Monitor scroll depth for floating "Back to Top" button
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setVisibleCount((prev) => Math.min(prev + 40, styles.length));
-        }
-      },
-      { rootMargin: '300px' }
-    );
-
-    const currentSentinel = sentinelRef.current;
-    if (currentSentinel) {
-      observer.observe(currentSentinel);
-    }
-
-    return () => {
-      if (currentSentinel) {
-        observer.unobserve(currentSentinel);
-      }
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 450);
     };
-  }, [styles.length]);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleZoomIn = () => {
     setFontScaleIndex((prev) => Math.min(prev + 1, FONT_SIZES.length - 1));
@@ -57,12 +46,17 @@ export function StyleGrid({ styles }: StyleGridProps) {
     setFontScaleIndex((prev) => Math.max(prev - 1, 0));
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const visibleStyles = styles.slice(0, visibleCount);
   const currentFontSize = FONT_SIZES[fontScaleIndex].class;
+  const remainingCount = styles.length - visibleCount;
 
   return (
     <div className="w-full space-y-4">
-      {/* Controls Bar (Matching Mockup) */}
+      {/* Controls Bar */}
       <div className="flex flex-wrap items-center justify-between gap-3 py-2 px-1 text-sm font-semibold text-slate-600 border-b border-slate-100">
         <div>
           Showing <span className="text-slate-900 font-bold">{visibleStyles.length}</span> of{' '}
@@ -150,17 +144,35 @@ export function StyleGrid({ styles }: StyleGridProps) {
         </div>
       )}
 
-      {/* Infinite Scroll Sentinel */}
+      {/* Controlled "Load More" Action Button (Eliminates Infinite Scroll Fatigue) */}
       {visibleCount < styles.length && (
-        <div ref={sentinelRef} className="py-6 flex flex-col items-center justify-center">
+        <div className="pt-6 pb-2 flex flex-col items-center justify-center gap-2">
           <button
             type="button"
-            onClick={() => setVisibleCount((prev) => Math.min(prev + 40, styles.length))}
-            className="px-6 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm border border-slate-200 transition-all"
+            onClick={() => setVisibleCount((prev) => Math.min(prev + CHUNK_SIZE, styles.length))}
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-all active:scale-98"
           >
-            Load More Styles (+40)
+            <Zap className="w-4 h-4" />
+            <span>Load More Styles (+{Math.min(CHUNK_SIZE, remainingCount)})</span>
           </button>
+          <span className="text-xs text-slate-500 font-medium">
+            {remainingCount} more styles available
+          </span>
         </div>
+      )}
+
+      {/* Floating "Back to Top" Button for Mobile Users */}
+      {showBackToTop && (
+        <button
+          type="button"
+          onClick={scrollToTop}
+          className="fixed bottom-20 right-6 z-30 inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-slate-900/90 hover:bg-slate-900 text-white text-xs font-bold shadow-xl border border-slate-700/80 backdrop-blur-sm transition-all animate-in fade-in active:scale-95"
+          title="Scroll back to search input"
+          aria-label="Scroll back to top"
+        >
+          <ArrowUp className="w-3.5 h-3.5" />
+          <span>Top</span>
+        </button>
       )}
     </div>
   );

@@ -28,12 +28,6 @@ export function WebAppJsonLd({ name, description, url }: WebAppSchemaProps) {
     author: {
       '@type': 'Person',
       name: 'AZDeveloper',
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Faisalabad',
-        addressRegion: 'Punjab',
-        addressCountry: 'PK',
-      },
     },
   };
 
@@ -93,12 +87,6 @@ export function ArticleJsonLd({
     author: {
       '@type': 'Person',
       name: authorName,
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Faisalabad',
-        addressRegion: 'Punjab',
-        addressCountry: 'PK',
-      },
     },
     publisher: {
       '@type': 'Organization',

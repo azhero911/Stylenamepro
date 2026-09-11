@@ -14,7 +14,6 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'free fire stylish name',
@@ -63,7 +62,6 @@ Use our **[Free Fire Name Generator](/free-fire-names)** to test your name lengt
     author: {
       name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'pubg stylish name',
@@ -110,7 +108,6 @@ Remember: PUBG Mobile allows up to **16 characters**, offering more room for cre
     author: {
       name: 'AZDeveloper',
       role: 'Tech & Gaming Researcher',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'invisible name free fire',
@@ -150,7 +147,6 @@ If the game reports *"Name already taken"*, our tool provides an automated varia
     author: {
       name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'how to change free fire name',
@@ -183,7 +179,6 @@ Once in your inventory, go to your profile, click your name, paste your new desi
     author: {
       name: 'AZDeveloper',
       role: 'Social Media Strategist',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'stylish name for instagram',
@@ -218,7 +213,6 @@ Check out our **[Instagram Fonts Generator](/instagram-names)** to copy clean ae
     author: {
       name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'clan name generator',
@@ -252,7 +246,6 @@ Generate unique team badges and squad prefixes with our **[Clan Name Generator](
     author: {
       name: 'AZDeveloper',
       role: 'Social Media Strategist',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'stylish name for whatsapp',
@@ -284,7 +277,6 @@ WhatsApp is used by over 2.5 billion people daily. By applying Unicode font styl
     author: {
       name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'bgmi name style',
@@ -310,7 +302,6 @@ Browse our **[PUBG & BGMI Tool](/pubg-names)** to craft your personalized BGMI h
     author: {
       name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'free fire guild name',
@@ -334,7 +325,6 @@ Recruiting top-tier players in Free Fire requires a prestigious Guild Name. In t
     author: {
       name: 'AZDeveloper',
       role: 'Esports Gaming Analyst',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'mobile legends name style',
@@ -358,7 +348,6 @@ In Mobile Legends: Bang Bang, reaching Mythic Glory is an achievement, and your 
     author: {
       name: 'AZDeveloper',
       role: 'Social Media Strategist',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'tiktok name style pakistan',
@@ -382,7 +371,6 @@ TikTok's algorithm favors profiles with high engagement and aesthetic appeal. By
     author: {
       name: 'AZDeveloper',
       role: 'Software Engineer',
-      location: 'Faisalabad, Pakistan',
     },
     keywords: [
       'how does fancy text generator work',

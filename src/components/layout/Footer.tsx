@@ -30,8 +30,8 @@ export function Footer() {
               nicknames into thousands of aesthetic, esports, and symbol designs with instant 1-tap copy.
             </p>
             <div className="flex items-center gap-2 text-xs text-slate-400 pt-2">
-              <MapPin className="w-4 h-4 text-brand-400 shrink-0" />
-              <span>Developed in Faisalabad, Punjab, Pakistan</span>
+              <Sparkles className="w-4 h-4 text-brand-400 shrink-0" />
+              <span>Free Online Gaming Nickname & Font Tool</span>
             </div>
           </div>
 

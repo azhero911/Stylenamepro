@@ -40,7 +40,7 @@ export interface BlogPost {
   author: {
     name: string;
     role: string;
-    location: string;
+    location?: string;
   };
   keywords: string[];
   content: string;

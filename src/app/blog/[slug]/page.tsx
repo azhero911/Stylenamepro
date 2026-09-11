@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, Clock, Calendar, User, MapPin } from 'lucide-react';
+import { ArrowLeft, Clock, Calendar, User } from 'lucide-react';
 import { BLOG_POSTS, getBlogPostBySlug, getAllBlogSlugs } from '@/data/blog-posts';
 import { ArticleJsonLd } from '@/components/seo/JsonLd';
 import { AdSlot } from '@/components/ui/AdSlot';
@@ -85,11 +85,6 @@ export default function BlogPostPage({ params }: PageProps) {
             <div className="font-bold text-slate-900 text-sm">{post.author.name}</div>
             <div className="text-xs text-slate-500 flex items-center gap-1">
               <span>{post.author.role}</span>
-              <span>•</span>
-              <span className="flex items-center gap-0.5">
-                <MapPin className="w-3 h-3 text-brand-600" />
-                {post.author.location}
-              </span>
             </div>
           </div>
         </div>
