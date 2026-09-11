@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ShieldCheck, Heart, Sparkles, MapPin } from 'lucide-react';
 
 export function Footer() {
@@ -11,7 +12,15 @@ export function Footer() {
           {/* Column 1: Brand Info */}
           <div className="space-y-4 md:col-span-1">
             <Link href="/" className="flex items-center gap-2.5">
-              <span className="w-3 h-3 rounded-full bg-brand-500 ring-4 ring-brand-900" />
+              <div className="relative w-9 h-9 rounded-xl overflow-hidden bg-white/10 p-0.5 border border-purple-400/30">
+                <Image
+                  src="/logo.png"
+                  alt="NameStylePro Logo"
+                  fill
+                  sizes="36px"
+                  className="object-contain"
+                />
+              </div>
               <span className="text-2xl font-black text-white tracking-tight">
                 NameStyle<span className="text-brand-400">Pro</span>
               </span>

@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   creator: 'AZDeveloper',
   publisher: 'NameStylePro',
   icons: {
-    icon: '/icon.svg',
-    apple: '/icon.svg',
+    icon: '/logo.png',
+    apple: '/logo.png',
   },
   manifest: '/manifest.webmanifest',
   openGraph: {

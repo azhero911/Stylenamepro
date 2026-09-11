@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Heart, Moon, Menu, X } from 'lucide-react';
 import { useFavorites } from '@/lib/hooks/useFavorites';
 import { FavoritesDrawer } from '../ui/FavoritesDrawer';
@@ -15,9 +16,18 @@ export function Header() {
     <>
       <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          {/* Logo Matching Mockup: Purple Dot + NameStylePro */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <span className="w-3 h-3 rounded-full bg-brand-600 ring-4 ring-brand-100 group-hover:scale-110 transition-transform" />
+          {/* Logo with official brand artwork */}
+          <Link href="/" className="flex items-center gap-2 group">
+            <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-xs border border-purple-100 group-hover:scale-105 transition-transform bg-white">
+              <Image
+                src="/logo.png"
+                alt="NameStylePro Logo"
+                fill
+                sizes="40px"
+                priority
+                className="object-contain"
+              />
+            </div>
             <span className="text-xl md:text-2xl font-black tracking-tight text-slate-900">
               NameStyle<span className="text-brand-600">Pro</span>
             </span>
