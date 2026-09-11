@@ -10,6 +10,9 @@ const siteUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     default: 'NameStylePro — Free Stylish Name Generator for Free Fire, PUBG & Socials',
     template: '%s | NameStylePro',
