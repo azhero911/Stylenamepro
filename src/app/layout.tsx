@@ -91,6 +91,12 @@ export default function RootLayout({
           name="google-site-verification"
           content="fdEST2_3poUSbKR_-HI2BRzWFRpFVICpOya5xIyK5cg"
         />
+        {/* Google AdSense Verification & Auto Ads */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3103070762949606"
+          crossOrigin="anonymous"
+        />
         <WebAppJsonLd
           name="NameStylePro"
           description="Free stylish name generator for Free Fire, PUBG Mobile, BGMI, and social media profiles."
