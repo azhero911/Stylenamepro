@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
-import { Copy, Check, Share2, Heart, Search, Zap, Flame, Shield } from 'lucide-react';
+import React, { useState, useMemo, useRef, useEffect, useCallback } from 'react';
+import { Copy, Check, Share2, Heart, Search, Zap, Flame, Shield, ChevronLeft, ChevronRight } from 'lucide-react';
 import { READY_ANIME_NAMES, ANIME_UNIVERSES, ReadyAnimeName } from '@/data/anime-names-data';
 import { useClipboard } from '@/lib/hooks/useClipboard';
 import { useFavorites } from '@/lib/hooks/useFavorites';
@@ -14,6 +14,82 @@ export function ReadyMadeAnimeGrid() {
 
   const { copyToClipboard, isCopied, getWhatsAppShareUrl } = useClipboard();
   const { isFavorite, toggleFavorite } = useFavorites();
+
+  // Scrollable tabs state & handlers
+  const tabsContainerRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+  const isDraggingRef = useRef(false);
+  const startXRef = useRef(0);
+  const scrollLeftRef = useRef(0);
+  const dragDistanceRef = useRef(0);
+
+  const checkScroll = useCallback(() => {
+    const el = tabsContainerRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 6);
+    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 6);
+  }, []);
+
+  useEffect(() => {
+    const el = tabsContainerRef.current;
+    if (!el) return;
+
+    checkScroll();
+
+    // Wheel event for desktop mice (converts vertical wheel to horizontal scroll)
+    const onWheel = (e: WheelEvent) => {
+      if (el.scrollWidth > el.clientWidth && e.deltaY !== 0) {
+        e.preventDefault();
+        el.scrollLeft += e.deltaY;
+        checkScroll();
+      }
+    };
+
+    el.addEventListener('wheel', onWheel, { passive: false });
+    window.addEventListener('resize', checkScroll);
+
+    return () => {
+      el.removeEventListener('wheel', onWheel);
+      window.removeEventListener('resize', checkScroll);
+    };
+  }, [checkScroll]);
+
+  const scrollTabs = (direction: 'left' | 'right') => {
+    const el = tabsContainerRef.current;
+    if (!el) return;
+    const distance = Math.max(220, el.clientWidth * 0.6);
+    el.scrollBy({
+      left: direction === 'left' ? -distance : distance,
+      behavior: 'smooth',
+    });
+    setTimeout(checkScroll, 320);
+  };
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    const el = tabsContainerRef.current;
+    if (!el) return;
+    isDraggingRef.current = true;
+    startXRef.current = e.pageX - el.offsetLeft;
+    scrollLeftRef.current = el.scrollLeft;
+    dragDistanceRef.current = 0;
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDraggingRef.current) return;
+    const el = tabsContainerRef.current;
+    if (!el) return;
+    e.preventDefault();
+    const x = e.pageX - el.offsetLeft;
+    const walk = (x - startXRef.current) * 1.5;
+    dragDistanceRef.current = Math.abs(walk);
+    el.scrollLeft = scrollLeftRef.current - walk;
+    checkScroll();
+  };
+
+  const handleMouseUp = () => {
+    isDraggingRef.current = false;
+  };
 
   // Filter names based on universe, search query, and game filter
   const filteredNames = useMemo(() => {
@@ -116,30 +192,81 @@ export function ReadyMadeAnimeGrid() {
         </div>
       </div>
 
-      {/* Universe Tabs */}
-      <div className="w-full overflow-x-auto py-1 scrollbar-none">
-        <div className="flex items-center gap-2 min-w-max px-1">
-          {ANIME_UNIVERSES.map((uni) => {
-            const isActive = selectedUniverse === uni.id;
-            return (
-              <button
-                key={uni.id}
-                type="button"
-                onClick={() => {
-                  setSelectedUniverse(uni.id);
-                  setVisibleCount(36);
-                }}
-                className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs md:text-sm font-semibold transition-all active:scale-95 ${
-                  isActive
-                    ? 'bg-brand-600 text-white shadow-sm ring-2 ring-brand-300'
-                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200/80 hover:text-slate-900 border border-slate-200/60'
-                }`}
-              >
-                <span>{uni.title}</span>
-              </button>
-            );
-          })}
+      {/* Universe Tabs with interactive scroll buttons and smooth wheel/drag scrolling */}
+      <div className="relative group/tabs flex items-center">
+        {/* Left Scroll Arrow Button */}
+        {canScrollLeft && (
+          <div className="absolute left-0 top-0 bottom-0 z-20 flex items-center pr-2 bg-gradient-to-r from-slate-50 via-slate-50/95 to-transparent">
+            <button
+              type="button"
+              onClick={() => scrollTabs('left')}
+              className="p-2 rounded-full bg-white text-slate-800 shadow-md border border-slate-200 hover:bg-slate-50 hover:text-brand-600 transition-all active:scale-90 cursor-pointer"
+              aria-label="Scroll universe tabs left"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+          </div>
+        )}
+
+        {/* Scrollable Container */}
+        <div
+          ref={tabsContainerRef}
+          onScroll={checkScroll}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+          className="w-full overflow-x-auto py-1 scroll-smooth cursor-grab active:cursor-grabbing select-none [-webkit-overflow-scrolling:touch]"
+          style={{ scrollbarWidth: 'thin' }}
+        >
+          <div className="flex items-center gap-2 min-w-max px-1">
+            {ANIME_UNIVERSES.map((uni) => {
+              const isActive = selectedUniverse === uni.id;
+              return (
+                <button
+                  key={uni.id}
+                  type="button"
+                  onClick={(e) => {
+                    // Prevent accidental click if user was dragging
+                    if (dragDistanceRef.current > 5) {
+                      e.preventDefault();
+                      return;
+                    }
+                    setSelectedUniverse(uni.id);
+                    setVisibleCount(36);
+                    // Smoothly center the clicked tab in view
+                    e.currentTarget.scrollIntoView({
+                      behavior: 'smooth',
+                      inline: 'center',
+                      block: 'nearest',
+                    });
+                  }}
+                  className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs md:text-sm font-semibold transition-all active:scale-95 shrink-0 cursor-pointer ${
+                    isActive
+                      ? 'bg-brand-600 text-white shadow-sm ring-2 ring-brand-300'
+                      : 'bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-2xs'
+                  }`}
+                >
+                  <span>{uni.title}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
+
+        {/* Right Scroll Arrow Button */}
+        {canScrollRight && (
+          <div className="absolute right-0 top-0 bottom-0 z-20 flex items-center pl-2 bg-gradient-to-l from-slate-50 via-slate-50/95 to-transparent">
+            <button
+              type="button"
+              onClick={() => scrollTabs('right')}
+              className="p-2 rounded-full bg-white text-slate-800 shadow-md border border-slate-200 hover:bg-slate-50 hover:text-brand-600 transition-all active:scale-90 cursor-pointer"
+              aria-label="Scroll universe tabs right"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Results Count Bar */}
