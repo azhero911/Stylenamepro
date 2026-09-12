@@ -14,11 +14,13 @@ export function getUnicodeLength(text: string): number {
   return Array.from(text).length;
 }
 
-// Popular gamer name pool for the "Random" generator button
+// Popular gamer and anime name pool for the "Random" generator button
 export const RANDOM_NAME_POOL = [
   'Shadow', 'Viper', 'Ghost', 'Thunder', 'Phoenix', 'Titan', 'Falcon', 'Raptor',
   'Alpha', 'Dragon', 'Ninja', 'Reaper', 'Cyber', 'King', 'Legend', 'Toxic',
   'Demon', 'Frost', 'Hunter', 'Matrix', 'Blaze', 'Wolf', 'Storm', 'Maverick',
+  'Itachi', 'Sasuke', 'Tanjiro', 'Gojo', 'Sukuna', 'Zoro', 'Luffy', 'Goku',
+  'Levi', 'Eren', 'Kaneki', 'Zenitsu', 'Kakashi', 'Minato', 'Rengoku',
   'Badshah', 'Sher', 'Sardar', 'Malang', 'Khan', 'Zaid', 'Striker', 'Tiger',
 ];
 
@@ -120,6 +122,7 @@ export function computeCategoryTabs(allStyles: StyleResult[]): CategoryTab[] {
     gaming: 0,
     'free-fire': 0,
     pubg: 0,
+    anime: 0,
     aesthetic: 0,
     love: 0,
     'urdu-pak': 0,
@@ -138,6 +141,7 @@ export function computeCategoryTabs(allStyles: StyleResult[]): CategoryTab[] {
     { id: 'gaming', label: 'Gaming', count: counts.gaming },
     { id: 'free-fire', label: 'Free Fire', count: counts['free-fire'] },
     { id: 'pubg', label: 'PUBG', count: counts.pubg },
+    { id: 'anime', label: 'Anime', count: counts.anime },
     { id: 'aesthetic', label: 'Aesthetic', count: counts.aesthetic },
     { id: 'love', label: 'Love', count: counts.love },
     { id: 'urdu-pak', label: 'Urdu/Pak', count: counts['urdu-pak'] },

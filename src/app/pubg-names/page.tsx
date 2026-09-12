@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { PubgToolClient } from './PubgToolClient';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
@@ -41,6 +42,16 @@ export default function PubgNamesPage() {
         </h1>
         <p className="text-base sm:text-lg text-slate-600 max-w-xl mx-auto">
           Craft conqueror-tier nicknames with OP tags, sniper emblems, and clan symbols.
+        </p>
+        <p className="text-sm text-slate-500 max-w-xl mx-auto">
+          Anime fans can find dark gothic and cursive styles inspired by Naruto, Attack on Titan, and Tokyo Ghoul on our{' '}
+          <Link
+            href="https://namestylepro.online/anime-names"
+            className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
+          >
+            anime name generator
+          </Link>{' '}
+          page.
         </p>
       </div>
 

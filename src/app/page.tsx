@@ -379,6 +379,16 @@ export default function HomePage() {
             </Link>{' '}
             page generates matching name styles for entire teams so every member has a coordinated look in the game lobby.
           </p>
+          <p>
+            Anime fans can visit our dedicated{' '}
+            <Link
+              href="https://namestylepro.online/anime-names"
+              className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
+            >
+              anime name generator
+            </Link>{' '}
+            for Naruto, Demon Slayer, and Dragon Ball inspired styles.
+          </p>
         </div>
       </section>
 

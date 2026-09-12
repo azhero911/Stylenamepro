@@ -3,6 +3,7 @@ export type ToolCategory =
   | 'gaming'
   | 'free-fire'
   | 'pubg'
+  | 'anime'
   | 'aesthetic'
   | 'love'
   | 'urdu-pak'

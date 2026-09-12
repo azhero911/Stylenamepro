@@ -60,6 +60,12 @@ export function Header() {
               Invisible
             </Link>
             <Link
+              href="/anime-names"
+              className="hover:text-brand-600 transition-colors"
+            >
+              Anime
+            </Link>
+            <Link
               href="/blog"
               className="hover:text-brand-600 transition-colors"
             >
@@ -140,6 +146,13 @@ export function Header() {
               className="block px-3 py-2 rounded-xl text-base font-bold text-slate-800 hover:bg-brand-50 hover:text-brand-600"
             >
               👻 Invisible Blank Name Trick
+            </Link>
+            <Link
+              href="/anime-names"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-3 py-2 rounded-xl text-base font-bold text-slate-800 hover:bg-brand-50 hover:text-brand-600"
+            >
+              ⚡ Anime Names & Fonts
             </Link>
             <Link
               href="/clan-names"

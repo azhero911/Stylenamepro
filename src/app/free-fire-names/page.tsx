@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { FreeFireToolClient } from './FreeFireToolClient';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
@@ -47,6 +48,16 @@ export default function FreeFireNamesPage() {
         </h1>
         <p className="text-base sm:text-lg text-slate-600 max-w-xl mx-auto">
           Generate boss nicknames, clan tags, and symbols for Free Fire with instant 1-tap copy.
+        </p>
+        <p className="text-sm text-slate-500 max-w-xl mx-auto">
+          If you want anime-themed names for your Free Fire profile, visit our{' '}
+          <Link
+            href="https://namestylepro.online/anime-names"
+            className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
+          >
+            anime name generator
+          </Link>{' '}
+          page for Naruto and Demon Slayer inspired styles.
         </p>
       </div>
 

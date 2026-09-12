@@ -59,6 +59,11 @@ export function Footer() {
                   Clan & Guild Name Maker
                 </Link>
               </li>
+              <li>
+                <Link href="/anime-names" className="hover:text-brand-400 transition-colors">
+                  Anime Stylish Name Generator
+                </Link>
+              </li>
             </ul>
           </div>
 
