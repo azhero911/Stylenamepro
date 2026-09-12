@@ -2,7 +2,6 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Sparkles, HelpCircle, ChevronRight, Swords } from 'lucide-react';
-import { AnimeToolClient } from './AnimeToolClient';
 import { ReadyMadeAnimeGrid } from './ReadyMadeAnimeGrid';
 import { AdSlot } from '@/components/ui/AdSlot';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
@@ -126,8 +125,24 @@ export default function AnimeNamesPage() {
         </p>
       </section>
 
-      {/* DYNAMIC GENERATOR TOOL */}
-      <AnimeToolClient />
+      {/* READY-MADE ANIME STYLISH NAMES VAULT (800+ NAMES) */}
+      <section className="bg-slate-50 rounded-3xl p-6 md:p-10 border border-slate-200 space-y-6 text-slate-700 leading-relaxed shadow-xs">
+        <div className="space-y-2">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-brand-100 text-brand-800">
+            <Sparkles className="w-3.5 h-3.5 text-brand-600" />
+            <span>Curated Ready-to-Copy Vault</span>
+          </div>
+          <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+            Ready-Made Anime Stylish Names to Copy
+          </h2>
+          <p className="text-base sm:text-lg text-slate-600">
+            If you want to skip generating and just pick a ready-made anime name, here are some of the most popular styles from our collection organized by anime theme. All of these can be generated directly by typing the character name into NameStylePro and selecting the matching font style.
+          </p>
+        </div>
+
+        {/* 1000+ Ready Made Names Interactive Explorer */}
+        <ReadyMadeAnimeGrid />
+      </section>
 
       <AdSlot slotType="banner" />
 
@@ -283,24 +298,7 @@ export default function AnimeNamesPage() {
         </div>
       </section>
 
-      {/* SECTION 5 — READY MADE ANIME NAMES (Covering 800+ Names) */}
-      <section className="bg-slate-50 rounded-3xl p-6 md:p-10 border border-slate-200 space-y-6 text-slate-700 leading-relaxed">
-        <div className="space-y-2">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-brand-100 text-brand-800">
-            <Sparkles className="w-3.5 h-3.5 text-brand-600" />
-            <span>Curated Ready-to-Copy Vault</span>
-          </div>
-          <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
-            Ready-Made Anime Stylish Names to Copy
-          </h2>
-          <p className="text-base sm:text-lg text-slate-600">
-            If you want to skip generating and just pick a ready-made anime name, here are some of the most popular styles from our collection organized by anime theme. All of these can be generated directly by typing the character name into NameStylePro and selecting the matching font style.
-          </p>
-        </div>
 
-        {/* 1000+ Ready Made Names Interactive Explorer */}
-        <ReadyMadeAnimeGrid />
-      </section>
 
       <AdSlot slotType="rectangle" />
 
