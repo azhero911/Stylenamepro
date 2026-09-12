@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   title: {
-    default: 'NameStylePro — Free Stylish Name Generator for Free Fire, PUBG & Socials',
+    default: 'NameStylePro — Free Stylish Name Generator for Free Fire & PUBG',
     template: '%s | NameStylePro',
   },
   description:
-    'Generate 1000+ fancy font styles, symbols, and decorative nicknames for Free Fire, PUBG Mobile, BGMI, and Instagram with 1-tap copy.',
+    'Generate 1000+ stylish names for Free Fire, PUBG, Instagram and WhatsApp on NameStylePro. Fancy fonts, Unicode symbols, invisible name trick — free, no login.',
   keywords: [
     'stylish name generator',
     'free fire stylish name',
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://namestylepro.online',
     siteName: 'NameStylePro',
-    title: 'NameStylePro — Free Stylish Name Generator (Free Fire, PUBG & Socials)',
+    title: 'NameStylePro — Free Stylish Name Generator for Free Fire & PUBG',
     description:
-      'Instantly convert any name into 1000+ fancy Unicode font styles, symbols, and gaming nicknames. 100% free and mobile-optimized.',
+      'Generate 1000+ stylish names for Free Fire, PUBG, Instagram and WhatsApp on NameStylePro. Fancy fonts, Unicode symbols, invisible name trick — free, no login.',
     images: [
       {
         url: '/og-image.png',
@@ -55,12 +55,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NameStylePro — Free Stylish Name Generator',
-    description: '1000+ fancy font styles, symbols & gaming nicknames. 1-tap copy.',
+    title: 'NameStylePro — Free Stylish Name Generator for Free Fire & PUBG',
+    description:
+      'Generate 1000+ stylish names for Free Fire, PUBG, Instagram and WhatsApp on NameStylePro. Fancy fonts, Unicode symbols, invisible name trick — free, no login.',
     images: ['/og-image.png'],
   },
   verification: {
-    google: 'SlfwyzB-2CCD-w2QJozo4XGN8UTuGAWGHIhtfyd3DpA',
+    google: [
+      'SlfwyzB-2CCD-w2QJozo4XGN8UTuGAWGHIhtfyd3DpA',
+      'fdEST2_3poUSbKR_-HI2BRzWFRpFVICpOya5xIyK5cg',
+    ],
   },
 };
 
@@ -82,6 +86,10 @@ export default function RootLayout({
         <meta
           name="google-site-verification"
           content="SlfwyzB-2CCD-w2QJozo4XGN8UTuGAWGHIhtfyd3DpA"
+        />
+        <meta
+          name="google-site-verification"
+          content="fdEST2_3poUSbKR_-HI2BRzWFRpFVICpOya5xIyK5cg"
         />
         <WebAppJsonLd
           name="NameStylePro"
