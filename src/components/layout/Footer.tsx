@@ -77,33 +77,48 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Gaming & Battle Royale */}
+          {/* Column 3: Gaming Silo */}
           <div className="space-y-3">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Gaming Tools</h3>
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Gaming Silo</h3>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
+              <li>
+                <Link href="/gaming-name-generator" className="hover:text-brand-400 transition-colors">
+                  Gaming Name Generator
+                </Link>
+              </li>
+              <li>
+                <Link href="/cool-gaming-names" className="hover:text-brand-400 transition-colors">
+                  Cool Gaming Names
+                </Link>
+              </li>
+              <li>
+                <Link href="/unique-gaming-names" className="hover:text-brand-400 transition-colors">
+                  Unique Gamertags
+                </Link>
+              </li>
+              <li>
+                <Link href="/short-gaming-names" className="hover:text-brand-400 transition-colors">
+                  Short Gaming Names
+                </Link>
+              </li>
+              <li>
+                <Link href="/3-letter-gaming-names" className="hover:text-brand-400 transition-colors">
+                  3 Letter Gaming Names
+                </Link>
+              </li>
+              <li>
+                <Link href="/pro-gaming-names" className="hover:text-brand-400 transition-colors">
+                  Pro Gaming Names
+                </Link>
+              </li>
+              <li>
+                <Link href="/aesthetic-gaming-names" className="hover:text-brand-400 transition-colors">
+                  Aesthetic Gaming Names
+                </Link>
+              </li>
               <li>
                 <Link href="/pubg-names" className="hover:text-brand-400 transition-colors">
                   PUBG & BGMI Nicknames
-                </Link>
-              </li>
-              <li>
-                <Link href="/anime-names" className="hover:text-brand-400 transition-colors">
-                  Anime Stylish Names
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog/stylish-names-for-free-fire" className="hover:text-brand-400 transition-colors">
-                  1000+ FF Names Guide
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog/free-fire-guild-names" className="hover:text-brand-400 transition-colors">
-                  300+ Guild Names Guide
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="hover:text-brand-400 transition-colors">
-                  All Game Guides
                 </Link>
               </li>
             </ul>
