@@ -20,7 +20,7 @@ import {
   Smile,
   CheckCircle2,
 } from 'lucide-react';
-import { useToast } from '@/components/ui/CopyToast';
+import { useClipboard } from '@/lib/hooks/useClipboard';
 
 export interface GuildCategory {
   id: string;
@@ -189,16 +189,10 @@ export const GUILD_CATEGORIES: GuildCategory[] = [
 export function GuildNameGrid() {
   const [activeTab, setActiveTab] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [copiedName, setCopiedName] = useState<string | null>(null);
-  const { showToast } = useToast();
+  const { copyToClipboard, isCopied } = useClipboard();
 
   const handleCopy = (name: string) => {
-    navigator.clipboard.writeText(name);
-    setCopiedName(name);
-    showToast(`Copied "${name}" to clipboard!`);
-    setTimeout(() => {
-      setCopiedName(null);
-    }, 2000);
+    copyToClipboard(name, `Copied "${name}" to clipboard!`);
   };
 
   const filteredNames = useMemo(() => {
@@ -336,7 +330,7 @@ export function GuildNameGrid() {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
           {filteredNames.map((item, idx) => {
-            const isCopied = copiedName === item.name;
+            const copied = isCopied(item.name);
             const charCount = [...item.name].length;
             const isWithinLimit = charCount <= 12;
 
@@ -345,7 +339,7 @@ export function GuildNameGrid() {
                 key={`${item.name}-${idx}`}
                 onClick={() => handleCopy(item.name)}
                 className={`group relative flex items-center justify-between p-3.5 rounded-2xl border transition-all cursor-pointer select-none ${
-                  isCopied
+                  copied
                     ? 'bg-emerald-50 border-emerald-500 shadow-md ring-2 ring-emerald-400/30'
                     : 'bg-white hover:bg-slate-50/80 border-slate-200 hover:border-brand-400 hover:shadow-md'
                 }`}
@@ -377,12 +371,12 @@ export function GuildNameGrid() {
                   <button
                     aria-label={`Copy ${item.name}`}
                     className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all ${
-                      isCopied
+                      copied
                         ? 'bg-emerald-600 text-white shadow-sm'
                         : 'bg-slate-100 group-hover:bg-brand-600 text-slate-600 group-hover:text-white'
                     }`}
                   >
-                    {isCopied ? (
+                    {copied ? (
                       <Check className="w-4 h-4" />
                     ) : (
                       <Copy className="w-4 h-4" />
