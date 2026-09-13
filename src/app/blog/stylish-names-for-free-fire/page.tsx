@@ -797,6 +797,27 @@ export default function StylishNamesFreeFireBlog() {
         </p>
       </section>
 
+      {/* Next Guide Callout */}
+      <div className="bg-gradient-to-r from-amber-50 via-orange-50 to-amber-100/60 border-2 border-amber-200 rounded-3xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="space-y-1 text-center sm:text-left">
+          <span className="text-xs font-black uppercase tracking-wider text-amber-800">
+            Next Recommended Guide
+          </span>
+          <h3 className="text-lg sm:text-xl font-black text-slate-900">
+            300+ Free Fire Guild Names with Cool Symbols (2026)
+          </h3>
+          <p className="text-xs sm:text-sm text-slate-600">
+            Looking for an elite squad name? Browse 300+ copyable guild names with crowns, badges, and clan frames.
+          </p>
+        </div>
+        <Link
+          href="/blog/free-fire-guild-names"
+          className="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-black text-white font-bold text-xs shadow-md transition-all active:scale-95 shrink-0"
+        >
+          Read Guild Guide →
+        </Link>
+      </div>
+
       {/* Back to guides link */}
       <div className="pt-4 text-center">
         <Link

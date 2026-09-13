@@ -12,6 +12,11 @@ const nextConfig = {
         destination: '/blog/stylish-names-for-free-fire',
         permanent: true,
       },
+      {
+        source: '/blog/free-fire-guild-names-cool-symbols',
+        destination: '/blog/free-fire-guild-names',
+        permanent: true,
+      },
     ];
   },
 };
