@@ -416,6 +416,11 @@ export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }
 
+const STATIC_BLOG_SLUGS = new Set([
+  'stylish-names-for-free-fire',
+  'free-fire-guild-names',
+]);
+
 export function getAllBlogSlugs(): string[] {
-  return BLOG_POSTS.map((p) => p.slug);
+  return BLOG_POSTS.map((p) => p.slug).filter((slug) => !STATIC_BLOG_SLUGS.has(slug));
 }

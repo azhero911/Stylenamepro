@@ -181,7 +181,7 @@ export default function FreeFireGuildNamesPage() {
         </div>
 
         {/* Top Ad Slot */}
-        <AdSlot client="ca-pub-3103070762949606" slot="ff-guild-top" format="auto" />
+        <AdSlot slotType="banner" />
 
         {/* Introduction Section */}
         <section className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base md:text-lg leading-relaxed">
@@ -323,7 +323,7 @@ export default function FreeFireGuildNamesPage() {
         </section>
 
         {/* Middle Ad Slot */}
-        <AdSlot client="ca-pub-3103070762949606" slot="ff-guild-mid" format="auto" />
+        <AdSlot slotType="responsive" />
 
         {/* Interactive Guild Names Explorer Grid */}
         <GuildNameGrid />
@@ -711,7 +711,7 @@ export default function FreeFireGuildNamesPage() {
         </section>
 
         {/* Bottom Ad Slot */}
-        <AdSlot client="ca-pub-3103070762949606" slot="ff-guild-bottom" format="auto" />
+        <AdSlot slotType="banner" />
 
         {/* Back Link */}
         <div className="pt-6 border-t border-slate-200 flex items-center justify-between">
