@@ -124,28 +124,33 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Social & Aesthetic */}
+          {/* Column 4: Social & Aesthetic Silo */}
           <div className="space-y-3">
             <h3 className="text-sm font-bold text-white uppercase tracking-wider">Social & Fonts</h3>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
               <li>
                 <Link href="/instagram-names" className="hover:text-brand-400 transition-colors">
-                  Instagram & TikTok Fonts
+                  Instagram Names (Hub)
+                </Link>
+              </li>
+              <li>
+                <Link href="/instagram-name-generator" className="hover:text-brand-400 transition-colors">
+                  Instagram Name Generator
+                </Link>
+              </li>
+              <li>
+                <Link href="/aesthetic-username-generator" className="hover:text-brand-400 transition-colors">
+                  Aesthetic Generator
+                </Link>
+              </li>
+              <li>
+                <Link href="/aesthetic-usernames" className="hover:text-brand-400 transition-colors">
+                  Aesthetic Usernames
                 </Link>
               </li>
               <li>
                 <Link href="/#generator" className="hover:text-brand-400 transition-colors">
                   Live Unicode Generator
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:text-brand-400 transition-colors">
-                  About NameStylePro
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-brand-400 transition-colors">
-                  Contact Support
                 </Link>
               </li>
             </ul>
