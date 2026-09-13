@@ -4,7 +4,7 @@ import { InvisibleToolClient } from './InvisibleToolClient';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Invisible Name Generator for Free Fire & PUBG — Blank Name Copy Paste (2026)',
+  title: 'Invisible Name Free Fire — Working Blank Nickname (2026)',
   description:
     'Generate 100% working invisible / blank names for Free Fire, PUBG Mobile, BGMI, and WhatsApp. Uses Hangul Filler (U+3164) and Braille blanks with 1-tap copy.',
   keywords: [

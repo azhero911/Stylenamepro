@@ -5,7 +5,7 @@ import { PubgToolClient } from './PubgToolClient';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'PUBG & BGMI Stylish Name Generator — 500+ Cool Conqueror Nicknames',
+  title: 'PUBG Stylish Name Generator — 500+ Cool BGMI Nicknames',
   description:
     'Generate stylish names for PUBG Mobile and BGMI with clan tags, OP symbols, and sniper designs. Up to 16 characters with 1-tap copy.',
   keywords: [

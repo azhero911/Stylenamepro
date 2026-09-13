@@ -7,7 +7,7 @@ import { AdSlot } from '@/components/ui/AdSlot';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'NameStylePro — Free Stylish Name Generator for Free Fire & PUBG',
+  title: 'NameStylePro — Stylish Name Generator for Free Fire & PUBG',
   description:
     'Generate 1000+ stylish names for Free Fire, PUBG, Instagram and WhatsApp on NameStylePro. Fancy fonts, Unicode symbols, invisible name trick — free, no login.',
   alternates: {

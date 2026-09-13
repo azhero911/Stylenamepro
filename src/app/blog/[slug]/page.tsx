@@ -22,7 +22,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   if (!post) return { title: 'Article Not Found' };
 
   return {
-    title: `${post.title} | NameStylePro`,
+    title: post.title,
     description: post.description,
     keywords: post.keywords,
     openGraph: {

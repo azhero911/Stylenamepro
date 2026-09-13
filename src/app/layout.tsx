@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   title: {
-    default: 'NameStylePro — Free Stylish Name Generator for Free Fire & PUBG',
-    template: '%s | NameStylePro',
+    default: 'NameStylePro — Stylish Name Generator for Free Fire & PUBG',
+    template: '%s',
   },
   description:
     'Generate 1000+ stylish names for Free Fire, PUBG, Instagram and WhatsApp on NameStylePro. Fancy fonts, Unicode symbols, invisible name trick — free, no login.',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://namestylepro.online',
     siteName: 'NameStylePro',
-    title: 'NameStylePro — Free Stylish Name Generator for Free Fire & PUBG',
+    title: 'NameStylePro — Stylish Name Generator for Free Fire & PUBG',
     description:
       'Generate 1000+ stylish names for Free Fire, PUBG, Instagram and WhatsApp on NameStylePro. Fancy fonts, Unicode symbols, invisible name trick — free, no login.',
     images: [
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NameStylePro — Free Stylish Name Generator for Free Fire & PUBG',
+    title: 'NameStylePro — Stylish Name Generator for Free Fire & PUBG',
     description:
       'Generate 1000+ stylish names for Free Fire, PUBG, Instagram and WhatsApp on NameStylePro. Fancy fonts, Unicode symbols, invisible name trick — free, no login.',
     images: ['/og-image.png'],

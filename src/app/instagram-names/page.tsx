@@ -4,7 +4,7 @@ import { InstagramToolClient } from './InstagramToolClient';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Instagram Fonts & Stylish Bio Name Generator — Aesthetic Fonts',
+  title: 'Instagram Fonts & Stylish Bio Names — Aesthetic Text',
   description:
     'Convert your name into aesthetic cursive, small caps, bold headers, and cute symbols for Instagram, TikTok, and WhatsApp bios.',
   keywords: [

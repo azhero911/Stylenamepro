@@ -5,7 +5,7 @@ import { FreeFireToolClient } from './FreeFireToolClient';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Free Fire Stylish Name Generator (FF) — 1000+ Cool Names & Nicknames',
+  title: 'Free Fire Stylish Name Generator — 1000+ Cool FF Nicknames',
   description:
     'Generate Free Fire stylish names, boss nicknames, guild badges, and symbols. Auto-checks 12-character game limit with 1-tap copy.',
   keywords: [
