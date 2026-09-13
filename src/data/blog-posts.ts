@@ -4,22 +4,28 @@ import { BlogPost } from '@/types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    slug: '1000-stylish-names-free-fire-2026',
+    slug: 'stylish-names-for-free-fire',
     title: '1000+ Best Stylish Names for Free Fire (2026) — Copy & Paste',
     description:
-      'Explore the biggest collection of 1000+ cool Free Fire stylish names, boss nicknames, guild tags, and symbols for boys and girls. Instant 1-tap copy.',
+      'Get 1000+ stylish names for Free Fire 2026. Boys, girls, attitude, anime, guild, and invisible names — all copy and paste ready. Updated for the latest FF season.',
     category: 'Free Fire',
-    readTime: '6 min read',
-    publishedAt: '2026-03-01',
+    readTime: '9 min read',
+    publishedAt: '2026-09-01',
     author: {
-      name: 'AZDeveloper',
-      role: 'Esports Gaming Analyst',
+      name: 'Arham Zahid',
+      role: 'Esports Nickname Strategist & Gaming Editor',
     },
     keywords: [
-      'free fire stylish name',
-      'ff name style copy paste',
-      'stylish name for free fire pakistan',
-      'free fire nickname 2026',
+      'stylish names for free fire',
+      'free fire stylish name copy paste',
+      'free fire name style 2026',
+      'ff name for boys',
+      'ff name for girls',
+      'free fire attitude name',
+      'free fire anime name',
+      'free fire guild name',
+      'invisible name free fire',
+      'free fire nickname generator',
     ],
     content: `
 # 1000+ Best Stylish Names for Free Fire (2026)
