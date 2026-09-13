@@ -17,6 +17,16 @@ const nextConfig = {
         destination: '/blog/free-fire-guild-names',
         permanent: true,
       },
+      {
+        source: '/invisible-name',
+        destination: '/free-fire-invisible-name',
+        permanent: true,
+      },
+      {
+        source: '/clan-names',
+        destination: '/free-fire-clan-names',
+        permanent: true,
+      },
     ];
   },
 };

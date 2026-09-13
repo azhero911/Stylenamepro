@@ -36,6 +36,12 @@ export function Header() {
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center gap-6 text-sm font-bold text-slate-600">
             <Link
+              href="/"
+              className="hover:text-brand-600 transition-colors"
+            >
+              Home
+            </Link>
+            <Link
               href="/free-fire-names"
               className="hover:text-brand-600 transition-colors"
             >
@@ -45,25 +51,13 @@ export function Header() {
               href="/pubg-names"
               className="hover:text-brand-600 transition-colors"
             >
-              PUBG
+              Gaming
             </Link>
             <Link
               href="/instagram-names"
               className="hover:text-brand-600 transition-colors"
             >
-              Instagram
-            </Link>
-            <Link
-              href="/invisible-name"
-              className="hover:text-brand-600 transition-colors"
-            >
-              Invisible
-            </Link>
-            <Link
-              href="/anime-names"
-              className="hover:text-brand-600 transition-colors"
-            >
-              Anime
+              Social
             </Link>
             <Link
               href="/blog"
@@ -118,7 +112,14 @@ export function Header() {
 
         {/* Mobile Dropdown Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-2 shadow-lg animate-in slide-in-from-top duration-200">
+          <div className="md:hidden border-t border-slate-200 bg-white px-4 py-4 space-y-1 shadow-lg animate-in slide-in-from-top duration-200">
+            <Link
+              href="/"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-3 py-2 rounded-xl text-base font-bold text-slate-800 hover:bg-brand-50 hover:text-brand-600"
+            >
+              🏠 Home
+            </Link>
             <Link
               href="/free-fire-names"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -131,42 +132,21 @@ export function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-3 py-2 rounded-xl text-base font-bold text-slate-800 hover:bg-brand-50 hover:text-brand-600"
             >
-              🎯 PUBG / BGMI Names
+              🎯 Gaming Names
             </Link>
             <Link
               href="/instagram-names"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-3 py-2 rounded-xl text-base font-bold text-slate-800 hover:bg-brand-50 hover:text-brand-600"
             >
-              📸 Instagram & Social Fonts
-            </Link>
-            <Link
-              href="/invisible-name"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block px-3 py-2 rounded-xl text-base font-bold text-slate-800 hover:bg-brand-50 hover:text-brand-600"
-            >
-              👻 Invisible Blank Name Trick
-            </Link>
-            <Link
-              href="/anime-names"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block px-3 py-2 rounded-xl text-base font-bold text-slate-800 hover:bg-brand-50 hover:text-brand-600"
-            >
-              ⚡ Anime Names & Fonts
-            </Link>
-            <Link
-              href="/clan-names"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block px-3 py-2 rounded-xl text-base font-bold text-slate-800 hover:bg-brand-50 hover:text-brand-600"
-            >
-              ⚔️ Clan & Guild Names
+              📸 Social & Aesthetic
             </Link>
             <Link
               href="/blog"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-3 py-2 rounded-xl text-base font-bold text-slate-800 hover:bg-brand-50 hover:text-brand-600"
             >
-              📖 Blog & Game Guides
+              📖 Blog & Guides
             </Link>
           </div>
         )}
