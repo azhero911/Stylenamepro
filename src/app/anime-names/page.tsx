@@ -7,24 +7,24 @@ import { AdSlot } from '@/components/ui/AdSlot';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Anime Stylish Name Generator — Free Fire, PUBG & Socials',
+  title: 'Anime Stylish Name ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Free 2026',
   description:
-    'Generate anime-style stylish names for Free Fire, PUBG, Instagram and TikTok on NameStylePro. Naruto, Itachi, Demon Slayer inspired fonts. Copy in one tap.',
+    '800+ Anime stylish names ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Naruto, Demon Slayer, Dragon Ball, JJK & One Piece fonts for Free Fire & PUBG ⚡ Free copy!',
   alternates: {
     canonical: 'https://namestylepro.online/anime-names',
   },
   openGraph: {
-    title: 'Anime Stylish Name Generator — NameStylePro',
+    title: 'Anime Stylish Name ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Free 2026',
     description:
-      'Generate anime-inspired stylish names for Free Fire, PUBG, Instagram and TikTok. Naruto, Sasuke, Demon Slayer fonts. Free, no login, one-tap copy.',
+      '800+ Anime stylish names ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Naruto, Demon Slayer, Dragon Ball, JJK & One Piece fonts for Free Fire & PUBG ⚡ Free copy!',
     url: 'https://namestylepro.online/anime-names',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Anime Stylish Name Generator — NameStylePro',
+    title: 'Anime Stylish Name ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Free 2026',
     description:
-      'Generate anime-inspired stylish names for Free Fire, PUBG, Instagram and TikTok. Naruto, Sasuke, Demon Slayer fonts. Free, no login, one-tap copy.',
+      '800+ Anime stylish names ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Naruto, Demon Slayer, Dragon Ball, JJK & One Piece fonts for Free Fire & PUBG ⚡ Free copy!',
   },
 };
 

@@ -5,9 +5,9 @@ import { BookOpen, Clock, ArrowRight, User } from 'lucide-react';
 import { BLOG_POSTS } from '@/data/blog-posts';
 
 export const metadata: Metadata = {
-  title: 'Gaming Nickname Guides & Tips (2026) — NameStylePro',
+  title: 'Gaming Nickname Guides ↳ ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 🔥 2026',
   description:
-    'Read expert guides on Free Fire stylish names, PUBG conqueror tags, invisible nickname glitches, and Instagram bio font strategies.',
+    'Read expert guides on Free Fire stylish names, PUBG tags, invisible nickname tricks & bio font strategies 🔥 1-tap ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 2026!',
 };
 
 export default function BlogIndexPage() {

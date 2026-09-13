@@ -23,9 +23,9 @@ import { InvisibleNameBox } from "./InvisibleNameBox";
 import { AdSlot } from "@/components/ui/AdSlot";
 
 export const metadata: Metadata = {
-  title: "1000+ Stylish Names for Free Fire 2026 — Copy & Paste",
+  title: "1000+ Free Fire Stylish Names ★ ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 🔥 2026",
   description:
-    "Get 1000+ stylish names for Free Fire 2026. Boys, girls, attitude, anime, guild, and invisible names — all copy and paste ready. Updated for the latest FF season.",
+    "1000+ Free Fire stylish names 🔥 Boys, Girls, Attitude, Anime & Guild ★彡 ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ ready — Updated September 2026",
   keywords: [
     "stylish names for free fire",
     "free fire stylish name copy paste",
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     canonical: "https://namestylepro.online/blog/stylish-names-for-free-fire",
   },
   openGraph: {
-    title: "1000+ Stylish Names for Free Fire 2026 — Copy & Paste",
+    title: "1000+ Free Fire Stylish Names ★ ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 🔥 2026",
     description:
-      "Get 1000+ stylish names for Free Fire 2026. Boys, girls, attitude, anime, guild, and invisible names — all copy and paste ready. Updated for the latest FF season.",
+      "1000+ Free Fire stylish names 🔥 Boys, Girls, Attitude, Anime & Guild ★彡 ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ ready — Updated September 2026",
     url: "https://namestylepro.online/blog/stylish-names-for-free-fire",
     type: "article",
     publishedTime: "2026-09-01T00:00:00.000Z",
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "1000+ Stylish Names for Free Fire 2026 — Copy & Paste",
+    title: "1000+ Free Fire Stylish Names ★ ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 🔥 2026",
     description:
-      "Get 1000+ stylish names for Free Fire 2026. Boys, girls, attitude, anime, guild, and invisible names — all copy and paste ready.",
+      "1000+ Free Fire stylish names 🔥 Boys, Girls, Attitude, Anime & Guild ★彡 ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ ready — Updated September 2026",
     images: ["https://namestylepro.online/images/blog/ff-stylish-names-header-2026.jpg"],
   },
 };

@@ -4,9 +4,9 @@ import { ClanToolClient } from './ClanToolClient';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Clan & Guild Name Generator — Esports Squad Names (2026)',
+  title: 'Guild & Clan Names ꧁☬©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ☬꧂ 👑 FF PUBG 2026',
   description:
-    'Generate powerful clan names and guild tags for Free Fire, PUBG, and Call of Duty. Includes squad emblems and Latin prefixes with 1-tap copy.',
+    '500+ Guild & Clan names ꧁☬©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ☬꧂ 👑 Squad tags, esports badges & attitude clan symbols for Free Fire & PUBG Mobile 🔥 Free!',
   keywords: [
     'clan name generator',
     'free fire guild name generator',
