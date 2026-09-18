@@ -3,7 +3,7 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { CopyToast } from '@/components/ui/CopyToast';
-import { WebAppJsonLd } from '@/components/seo/JsonLd';
+import { WebAppJsonLd, OrganizationJsonLd } from '@/components/seo/JsonLd';
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || 'https://namestylepro.online';
@@ -32,8 +32,17 @@ export const metadata: Metadata = {
   creator: 'AZDeveloper',
   publisher: 'NameStylePro',
   icons: {
-    icon: '/logo.png',
-    apple: '/logo.png',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/logo.png', sizes: '1024x1024', type: 'image/png' },
+    ],
+    shortcut: ['/favicon.ico'],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
   manifest: '/manifest.webmanifest',
   openGraph: {
@@ -97,10 +106,23 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3103070762949606"
           crossOrigin="anonymous"
         />
+        {/* Explicit Favicon Links for Googlebot-Image & Google Favicon Compliance */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
+        <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
+        <link rel="icon" href="/favicon-192x192.png" sizes="192x192" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
         <WebAppJsonLd
           name="NameStylePro"
           description="Free stylish name generator for Free Fire, PUBG Mobile, BGMI, and social media profiles."
           url={siteUrl}
+        />
+        <OrganizationJsonLd
+          name="NameStylePro"
+          url={siteUrl}
+          logo={`${siteUrl}/logo.png`}
         />
         {/* Service Worker Registration */}
         <script

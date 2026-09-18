@@ -39,6 +39,53 @@ export function WebAppJsonLd({ name, description, url }: WebAppSchemaProps) {
   );
 }
 
+export function OrganizationJsonLd({
+  name = 'NameStylePro',
+  url = 'https://namestylepro.online',
+  logo = 'https://namestylepro.online/logo.png',
+}: {
+  name?: string;
+  url?: string;
+  logo?: string;
+}) {
+  const schema = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name,
+      url,
+      logo: {
+        '@type': 'ImageObject',
+        url: logo,
+        width: 1024,
+        height: 1024,
+      },
+      sameAs: ['https://namestylepro.online'],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name,
+      url,
+      publisher: {
+        '@type': 'Organization',
+        name,
+        logo: {
+          '@type': 'ImageObject',
+          url: logo,
+        },
+      },
+    },
+  ];
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export function FaqJsonLd({ faqs }: { faqs: FaqItem[] }) {
   if (!faqs || faqs.length === 0) return null;
 
