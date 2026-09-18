@@ -5,10 +5,13 @@ import { Copy, Check, Sparkles, Heart, Wand2, RefreshCw, ShieldCheck, Gamepad2 }
 import { useClipboard } from '@/lib/hooks/useClipboard';
 import { useFavorites } from '@/lib/hooks/useFavorites';
 
-interface GeneratedRobloxItem {
+interface RawRobloxItem {
   name: string;
   category: string;
   tag: string;
+}
+
+interface GeneratedRobloxItem extends RawRobloxItem {
   isUsernameValid: boolean; // true if 3-20 chars, alphanumeric + underscores only
   charCount: number;
 }
@@ -43,11 +46,11 @@ export function RobloxToolClient() {
     const clean = raw.toLowerCase().replace(/[^a-z0-9_]/g, '') || 'player';
     const cleanCap = clean.charAt(0).toUpperCase() + clean.slice(1);
 
-    const items: GeneratedRobloxItem[] = [
+    const items: RawRobloxItem[] = [
       // Aesthetic & Soft (Lowercase, subtle underscores, chill)
       { name: clean, category: 'aesthetic', tag: 'Minimalist' },
       { name: `${clean}vibes`, category: 'aesthetic', tag: 'Aesthetic' },
-      { name: `_${clean}_`, category: 'aesthetic', tag: 'Underscore' },
+      { name: `${clean}_x`, category: 'aesthetic', tag: 'Aesthetic' },
       { name: `${clean}moon`, category: 'aesthetic', tag: 'Dreamy' },
       { name: `ii_${clean}`, category: 'aesthetic', tag: 'Classic' },
       { name: `${clean}y`, category: 'aesthetic', tag: 'Soft Vowel' },
@@ -55,12 +58,12 @@ export function RobloxToolClient() {
       { name: `${clean}_glow`, category: 'aesthetic', tag: 'Aesthetic' },
 
       // Preppy & Y2K (itz, xox, trendy)
-      { name: `itz.${clean}`, category: 'preppy', tag: 'Preppy' },
+      { name: `itz_${clean}`, category: 'preppy', tag: 'Preppy' },
       { name: `xox_${clean}`, category: 'preppy', tag: 'Y2K' },
       { name: `vibes_${clean}`, category: 'preppy', tag: 'Trendy' },
       { name: `glossy_${clean}`, category: 'preppy', tag: 'Preppy' },
       { name: `not_${clean}`, category: 'preppy', tag: 'Clean' },
-      { name: `preppy.${clean}`, category: 'preppy', tag: 'TikTok' },
+      { name: `preppy_${clean}`, category: 'preppy', tag: 'TikTok' },
       { name: `${clean}_rose`, category: 'preppy', tag: 'Chic' },
 
       // Cute & Pastel (Kawaii, bakery, cottagecore)
@@ -95,18 +98,19 @@ export function RobloxToolClient() {
       { name: `Retro${cleanCap}`, category: 'blox', tag: 'Retro' },
       { name: `Dev${cleanCap}`, category: 'blox', tag: 'Studio' },
 
-      // Display Name Formats (Spaced, small caps - for in-game display name)
-      { name: toSpaced(clean.slice(0, 10)), category: 'display', tag: 'Spaced Display' },
-      { name: toSmallCaps(clean.slice(0, 12)), category: 'display', tag: 'Small Caps Display' },
-      { name: `• ${clean} •`, category: 'display', tag: 'Aesthetic Display' },
-      { name: `[ ${clean} ]`, category: 'display', tag: 'Clean Display' },
-      { name: `☁ ${clean} ☁`, category: 'display', tag: 'Symbol Display' },
+      // Display Name Formats (Clean account display names & RP styles)
+      { name: cleanCap, category: 'display', tag: 'Clean Display' },
+      { name: clean.toUpperCase(), category: 'display', tag: 'PvP All-Caps' },
+      { name: `${cleanCap}Vibes`, category: 'display', tag: 'Vibes' },
+      { name: `Soft${cleanCap}`, category: 'display', tag: 'Softie' },
+      { name: toSpaced(clean.slice(0, 10)), category: 'display', tag: 'RP Spaced' },
+      { name: toSmallCaps(clean.slice(0, 12)), category: 'display', tag: 'RP Small Caps' },
     ];
 
     return items.map((it) => {
       const len = Array.from(it.name).length;
-      // Roblox username valid: 3-20 chars, letters, numbers, underscores only (no spaces, dots, or non-ascii)
-      const isUsernameValid = len >= 3 && len <= 20 && /^[a-zA-Z0-9_]+$/.test(it.name);
+      // Roblox username valid: 3-20 chars, letters, numbers, max 1 single underscore (not at start or end)
+      const isUsernameValid = len >= 3 && len <= 20 && /^[a-zA-Z0-9]+(_[a-zA-Z0-9]+)?$/.test(it.name);
       return {
         ...it,
         isUsernameValid,
@@ -295,8 +299,7 @@ export function RobloxToolClient() {
         <div>
           <strong className="font-bold">Roblox Username Rules:</strong> Official Roblox usernames (@handles) must be
           3 to 20 characters long and can only include letters, numbers, and a single non-consecutive underscore.
-          <strong> Display Names</strong> can be changed for free once every 7 days in your Account Settings and support
-          spaces and aesthetic typography!
+          <strong> Display Names</strong> can be changed for free once every 7 days in your Account Settings (letters and numbers). Because Display Names do not need to be unique, you can finally use clean one-word aesthetic names like <em>Cloudy</em> or <em>Viper</em> without numbers!
         </div>
       </div>
     </div>

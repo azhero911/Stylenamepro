@@ -39,12 +39,12 @@ const FAQS = [
   {
     question: 'Can I use special symbols in my boy username on Roblox?',
     answer:
-      'Official Roblox account handles (@usernames) only allow standard alphanumeric characters (a-z, 0-9) and single non-consecutive underscores. However, if you want spaced letters or aesthetic typography, you can set those in your free in-game Display Name (e.g., "V O R T E X").',
+      'Official Roblox account handles (@usernames) only allow standard alphanumeric characters (a-z, 0-9) and a single non-consecutive underscore. For your in-game Display Name, you can use clean one-word tags (e.g., "Vortex" or "Silent") without numbers, or sweat all-caps tags (e.g., "VORTEX") directly in your account settings for free.',
   },
   {
     question: 'What should I do if my preferred Roblox boy name is taken?',
     answer:
-      'Try adding classic Roblox prefixes like "itz", "ii_", or "not", or adding subtle suffixes like "_dev", "_x", or "_hq". You can also test repeating the final letter, such as "zenithh" or "astralx".',
+      'Try adding classic Roblox prefixes like "itz_", "ii_", or "not_", or adding subtle suffixes like "_dev", "_x", or "_hq". You can also test repeating the final letter, such as "zenithh" or "astralx".',
   },
 ];
 

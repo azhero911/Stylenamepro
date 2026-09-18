@@ -74,12 +74,12 @@ const FAQS = [
   {
     question: 'What is the difference between a Roblox Username and a Display Name?',
     answer:
-      'Your Roblox Username (@username) is your unique account ID used for logins and mentions; changing it costs 1,000 Robux and it must follow strict alphanumeric rules. Your Display Name is the name shown to other players in games and above your avatar\'s head; it can be changed for FREE once every 7 days and supports spaces and aesthetic fonts up to 20 characters.',
+      'Your Roblox Username (@username) is your unique account ID used for logins and mentions; changing it costs 1,000 Robux and it must follow strict alphanumeric rules (letters, numbers, max 1 underscore). Your Display Name is the name shown to other players in games and above your avatar\'s head; it can be changed for FREE once every 7 days (letters and numbers). Crucially, Display Names do NOT have to be unique, meaning you can finally use clean one-word aesthetic names like "Cloudy" or "Velvet" for free!',
   },
   {
     question: 'How do I create an aesthetic Roblox username if my favorite name is taken?',
     answer:
-      'Use popular Roblox aesthetic naming techniques: double the final vowel (e.g., "cloudyy" or "cozyy"), surround the name with subtle single underscores (e.g., "_solaris_"), or add aesthetic prefixes and suffixes like "itz.", "ii_", "xox_", "vibe.", or "_tea".',
+      'Use popular Roblox aesthetic naming techniques: double the final vowel (e.g., "cloudyy" or "cozyy"), add a clean suffix like "solaris_x" or "velvet_co", or add aesthetic community prefixes like "itz_", "ii_", or "not_". Remember that Roblox permits only a single internal underscore and strictly forbids dots.',
   },
   {
     question: 'Can I get banned for using certain Roblox display names?',
@@ -198,7 +198,7 @@ export default function RobloxNameGeneratorPage() {
           <div className="bg-white p-5 rounded-2xl border border-slate-200 space-y-2">
             <h3 className="font-bold text-slate-900">2. Subtle Prefixes & Suffixes</h3>
             <p className="text-slate-600 text-xs leading-relaxed">
-              When one-word handles are taken, Roblox creators rely on classic community prefixes like <em>itz.</em>, <em>ii_</em>, <em>not_</em>, or suffixes like <em>_xo</em>, <em>_rx</em>, and <em>_tea</em>.
+              When one-word handles are taken, Roblox creators rely on classic community prefixes like <em>itz_</em>, <em>ii_</em>, <em>not_</em>, or suffixes like <em>_xo</em>, <em>_rx</em>, and <em>_tea</em>.
             </p>
           </div>
 
@@ -214,8 +214,8 @@ export default function RobloxNameGeneratorPage() {
           <ShieldCheck className="w-5 h-5 text-purple-600 shrink-0 mt-0.5" />
           <div>
             <strong className="font-bold">Roblox Username Constraints:</strong> Official Roblox usernames must be
-            between 3 and 20 characters and may only contain letters (a-z, A-Z), numbers (0-9), and a single underscore.
-            Display Names allow spaces and up to 20 characters, with a 7-day free cooldown between edits.
+            between 3 and 20 characters and may only contain letters (a-z, A-Z), numbers (0-9), and at most one underscore.
+            Display Names allow letters and numbers (no spaces or special symbols) with a 7-day free cooldown between edits.
           </div>
         </div>
       </section>
