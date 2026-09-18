@@ -89,6 +89,37 @@ Visit our full **[Free Fire Guild Names Guide](/blog/free-fire-guild-names)** to
     `,
   },
   {
+    slug: 'roblox-display-names-ideas',
+    title: '150+ Roblox Display Names Ideas (2026) ☁️ Aesthetic, Boys, Girls & Duo Tags',
+    description:
+      'Top aesthetic Roblox display name ideas for 2026. Explore cute, preppy, Da Hood PvP, and funny Roblox display names. Copy in 1 tap + step-by-step change guide!',
+    category: 'Roblox',
+    readTime: '8 min read',
+    publishedAt: '2026-09-18',
+    author: {
+      name: 'Arham Zahid',
+      role: 'Gaming & Esports Culture Editor',
+    },
+    keywords: [
+      'roblox display names ideas',
+      'aesthetic roblox display names',
+      'roblox display names for boys',
+      'roblox display names for girls',
+      'funny roblox display names',
+      'good roblox display names',
+      'roblox name generator',
+      'roblox aesthetic names',
+      'how to change roblox display name',
+    ],
+    content: `
+# 150+ Best Roblox Display Name Ideas (2026): Aesthetic, Boys, Girls & Duo Tags
+
+Looking for a standout, aesthetic display name for your Roblox avatar? While battle royale gamers fill their tags with chaotic symbols, seasoned Roblox players prioritize clean, dreamy **aesthetics**—from soft lowercase typography to spaced lettering and preppy Y2K tags.
+
+Visit our full **[Roblox Display Names Guide](/blog/roblox-display-names-ideas)** to explore all 150+ 1-tap copyable display tags and our step-by-step tutorial!
+    `,
+  },
+  {
     slug: 'best-pubg-stylish-names-copy-paste',
     title: 'PUBG & BGMI Stylish Names ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ 👑 2026',
     description:
@@ -430,6 +461,7 @@ const STATIC_BLOG_SLUGS = new Set([
   'stylish-names-for-free-fire',
   'free-fire-guild-names',
   'mobile-legends-name-style-mlbb',
+  'roblox-display-names-ideas',
 ]);
 
 export function getAllBlogSlugs(): string[] {

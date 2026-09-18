@@ -69,6 +69,13 @@ const GAMING_SUB_HUBS = [
     icon: Zap,
     color: 'text-purple-500 bg-purple-50 border-purple-100',
   },
+  {
+    title: 'Roblox Name Generator',
+    href: '/roblox-name-generator',
+    desc: 'Aesthetic usernames, preppy Y2K tags, Da Hood PvP, and display names.',
+    icon: Gamepad2,
+    color: 'text-fuchsia-500 bg-fuchsia-50 border-fuchsia-100',
+  },
 ];
 
 const FAQS = [

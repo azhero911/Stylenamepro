@@ -106,6 +106,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.85,
     },
+    // Roblox Silo
+    {
+      url: `${baseUrl}/roblox-name-generator`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/roblox-names-for-boys`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/roblox-names-for-girls`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
     // Social & Aesthetic Silo
     {
       url: `${baseUrl}/instagram-names`,
@@ -143,6 +162,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'daily',
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/roblox-display-names-ideas`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/blog/stylish-names-for-free-fire`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/blog/free-fire-guild-names`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/blog/mobile-legends-name-style-mlbb`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
     },
     // Utility & Legal Pages
     {

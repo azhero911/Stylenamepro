@@ -121,6 +121,26 @@ export function Footer() {
                   PUBG & BGMI Nicknames
                 </Link>
               </li>
+              <li>
+                <Link href="/roblox-name-generator" className="hover:text-brand-400 transition-colors text-purple-300 font-medium">
+                  Roblox Name Generator
+                </Link>
+              </li>
+              <li>
+                <Link href="/roblox-names-for-boys" className="hover:text-brand-400 transition-colors">
+                  Roblox Names for Boys
+                </Link>
+              </li>
+              <li>
+                <Link href="/roblox-names-for-girls" className="hover:text-brand-400 transition-colors">
+                  Roblox Names for Girls
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/roblox-display-names-ideas" className="hover:text-brand-400 transition-colors">
+                  Roblox Display Names
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -187,8 +207,8 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-slate-800 text-xs text-slate-500 space-y-3">
           <p>
             <strong>Disclaimer:</strong> Free Fire is a registered trademark of Garena International. PUBG and BGMI
-            are registered trademarks of KRAFTON, Inc. NameStylePro is an independent Unicode font decorator and
-            nickname utility. We are not affiliated with, endorsed by, or partnered with Garena, KRAFTON, or any game developer.
+            are registered trademarks of KRAFTON, Inc. Roblox is a registered trademark of Roblox Corporation. NameStylePro is an independent Unicode font decorator and
+            nickname utility. We are not affiliated with, endorsed by, or partnered with Garena, KRAFTON, Roblox Corporation, or any game developer.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-slate-500 pt-2">
             <div>

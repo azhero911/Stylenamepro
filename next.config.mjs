@@ -27,6 +27,26 @@ const nextConfig = {
         destination: '/free-fire-clan-names',
         permanent: true,
       },
+      {
+        source: '/roblox-names',
+        destination: '/roblox-name-generator',
+        permanent: true,
+      },
+      {
+        source: '/roblox-display-names',
+        destination: '/blog/roblox-display-names-ideas',
+        permanent: true,
+      },
+      {
+        source: '/roblox-name-generator-for-boys',
+        destination: '/roblox-names-for-boys',
+        permanent: true,
+      },
+      {
+        source: '/roblox-name-generator-for-girls',
+        destination: '/roblox-names-for-girls',
+        permanent: true,
+      },
     ];
   },
 };
