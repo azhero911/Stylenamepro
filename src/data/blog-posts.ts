@@ -90,9 +90,9 @@ Visit our full **[Free Fire Guild Names Guide](/blog/free-fire-guild-names)** to
   },
   {
     slug: 'roblox-display-names-ideas',
-    title: '150+ Roblox Display Names Ideas (2026) ☁️ Aesthetic, Boys, Girls & Duo Tags',
+    title: '150+ Aesthetic Roblox Display Names (2026) | NameStylePro',
     description:
-      'Top aesthetic Roblox display name ideas for 2026. Explore cute, preppy, Da Hood PvP, and funny Roblox display names. Copy in 1 tap + step-by-step change guide!',
+      'Explore 150+ aesthetic Roblox display names for 2026. Cute, preppy, Da Hood PvP, and matching duo tags ready to copy in 1 tap + free name change guide!',
     category: 'Roblox',
     readTime: '8 min read',
     publishedAt: '2026-09-18',

@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Clock,
   Calendar,
@@ -22,9 +23,9 @@ import { ArticleJsonLd } from '@/components/seo/JsonLd';
 import { AdSlot } from '@/components/ui/AdSlot';
 
 export const metadata: Metadata = {
-  title: '150+ Roblox Display Names Ideas (2026) ☁️ Aesthetic, Boys, Girls & Duo Tags',
+  title: '150+ Aesthetic Roblox Display Names (2026) | NameStylePro',
   description:
-    'Top aesthetic Roblox display name ideas for 2026. Explore cute, preppy, Da Hood PvP, and funny Roblox display names. Copy in 1 tap + step-by-step change guide!',
+    'Explore 150+ aesthetic Roblox display names for 2026. Cute, preppy, Da Hood PvP, and matching duo tags ready to copy in 1 tap + free name change guide!',
   keywords: [
     'roblox display names ideas',
     'aesthetic roblox display names',
@@ -41,14 +42,22 @@ export const metadata: Metadata = {
     canonical: 'https://namestylepro.online/blog/roblox-display-names-ideas',
   },
   openGraph: {
-    title: '150+ Roblox Display Names Ideas (2026) ☁️ Aesthetic, Boys, Girls & Duo Tags',
+    title: '150+ Aesthetic Roblox Display Names (2026) | NameStylePro',
     description:
-      'Top aesthetic Roblox display name ideas for 2026. Explore cute, preppy, Da Hood PvP, and funny Roblox display names. Copy in 1 tap + step-by-step change guide!',
+      'Explore 150+ aesthetic Roblox display names for 2026. Cute, preppy, Da Hood PvP, and matching duo tags ready to copy in 1 tap + free name change guide!',
     url: 'https://namestylepro.online/blog/roblox-display-names-ideas',
     type: 'article',
     publishedTime: '2026-09-18T00:00:00.000Z',
     modifiedTime: '2026-09-18T00:00:00.000Z',
     authors: ['Arham Zahid'],
+    images: [
+      {
+        url: 'https://namestylepro.online/images/blog/roblox-display-names-header-2026.jpg',
+        width: 1200,
+        height: 675,
+        alt: '150+ Aesthetic Roblox Display Name Ideas 2026',
+      },
+    ],
   },
 };
 
@@ -103,6 +112,18 @@ export default function RobloxDisplayNamesBlogPage() {
             <div className="font-bold text-slate-900 text-sm">{authorName}</div>
             <div className="text-xs text-slate-500">Gaming & Esports Culture Editor</div>
           </div>
+        </div>
+
+        {/* Featured Hero Banner */}
+        <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-lg border border-purple-200/80 bg-slate-100 mt-6">
+          <Image
+            src="/images/blog/roblox-display-names-header-2026.jpg"
+            alt="150+ Aesthetic Roblox Display Names 2026"
+            fill
+            priority
+            sizes="(max-width: 896px) 100vw, 896px"
+            className="object-cover"
+          />
         </div>
       </header>
 
@@ -175,7 +196,7 @@ export default function RobloxDisplayNamesBlogPage() {
           </div>
           <p className="text-xs sm:text-sm text-purple-900 leading-relaxed">
             Roblox culture embraces <strong>minimalist aesthetics</strong>: all-lowercase handles, soft nature or cafe terms,
-            spaced letters (<code>c l o u d y</code>), delicate small capitals (<code>ᴠ ᴇ ʟ ᴠ ᴇ ᴛ</code>), and subtle prefixes like <code>itz.</code>,
+            clean one-word tags (<code>cloudy</code>, <code>velvet</code>, <code>solaris</code>), and subtle prefixes like <code>itz_</code>,
             <code>ii_</code>, or <code>not_</code>. These names look clean above avatars, read effortlessly in leaderboard scoreboards,
             and complement avatar clothing aesthetics seamlessly.
           </p>
@@ -193,6 +214,17 @@ export default function RobloxDisplayNamesBlogPage() {
           Before picking a name, it is essential to understand the difference between your <strong>Username</strong> and your <strong>Display Name</strong> on Roblox.
           They are two separate entities with entirely different constraints:
         </p>
+
+        {/* Infographic Banner */}
+        <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-md border border-slate-200 bg-slate-50 my-4">
+          <Image
+            src="/images/blog/roblox-naming-rules-guide-2026.jpg"
+            alt="Roblox Username vs Display Name Rules Infographic"
+            fill
+            sizes="(max-width: 896px) 100vw, 896px"
+            className="object-cover"
+          />
+        </div>
 
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs sm:text-sm border-collapse bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xs">
@@ -216,8 +248,8 @@ export default function RobloxDisplayNamesBlogPage() {
               </tr>
               <tr>
                 <td className="p-3 sm:p-4 font-bold text-slate-900">Allowed Characters</td>
-                <td className="p-3 sm:p-4">Letters, numbers, 1 single underscore</td>
-                <td className="p-3 sm:p-4 font-semibold text-emerald-700">Letters, numbers, spaces, and clean Unicode fonts</td>
+                <td className="p-3 sm:p-4">Letters, numbers, max 1 underscore (no start/end)</td>
+                <td className="p-3 sm:p-4 font-semibold text-emerald-700">Letters and numbers (no spaces, dots, or symbols)</td>
               </tr>
               <tr>
                 <td className="p-3 sm:p-4 font-bold text-slate-900">Uniqueness</td>
@@ -238,8 +270,18 @@ export default function RobloxDisplayNamesBlogPage() {
           </table>
         </div>
 
+        <div className="p-4 bg-amber-50 border border-amber-200 rounded-2xl space-y-2 text-xs sm:text-sm text-amber-950">
+          <div className="font-bold flex items-center gap-1.5 text-amber-900">
+            <Info className="w-4 h-4 text-amber-600 shrink-0" />
+            <span>Why do players get the &ldquo;Display name contains unsupported characters&rdquo; error?</span>
+          </div>
+          <p className="leading-relaxed">
+            Roblox account Display Names <strong>do not support spaces, dots, emojis, or mathematical Unicode fonts</strong> in account settings. If you try to input spaces (e.g. <code>c l o u d y</code>) or special symbols, Roblox will reject it. (Note: Custom roleplay games like Brookhaven RP and Royale High have separate in-game nametag textboxes that allow spaces and symbols, but your platform-wide Display Name must be alphanumeric).
+          </p>
+        </div>
+
         <p className="text-xs text-slate-500 italic">
-          * Note: Because Display Names do NOT have to be unique, you can rock highly sought-after aesthetic words like &ldquo;cloudy&rdquo;, &ldquo;velvet&rdquo;, or &ldquo;peachy&rdquo; without paying 1,000 Robux for a taken username!
+          * Pro Tip: Because Display Names do NOT have to be unique, you can finally rock highly sought-after aesthetic one-word names like &ldquo;Cloudy&rdquo;, &ldquo;Velvet&rdquo;, or &ldquo;Peachy&rdquo; without paying 1,000 Robux or settling for awkward random numbers!
         </p>
       </section>
 
@@ -418,17 +460,21 @@ export default function RobloxDisplayNamesBlogPage() {
           <details className="p-4 bg-white rounded-2xl border border-slate-200 group">
             <summary className="font-bold text-slate-900 cursor-pointer list-none flex items-center justify-between text-sm">
               <span>Why did my Display Name turn into hash symbols (####)?</span>
-              <span className="text-xs sm:text-sm text-slate-600 pt-2 leading-relaxed">
-                If your chosen name is censored with hashtags, it triggered Roblox&apos;s automated safety filter. This happens if the text resembles personal identifying information (full real names, phone numbers), inappropriate language, or external social media handles. Roblox will reset your display tag to your @username.
-              </p>
+              <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+            </summary>
+            <p className="text-xs sm:text-sm text-slate-600 pt-2 leading-relaxed">
+              If your chosen name is censored with hashtags, it triggered Roblox&apos;s automated safety filter. This happens if the text resembles personal identifying information (full real names, phone numbers), inappropriate language, or external social media handles. Roblox will reset your display tag to your @username.
+            </p>
           </details>
 
           <details className="p-4 bg-white rounded-2xl border border-slate-200 group">
             <summary className="font-bold text-slate-900 cursor-pointer list-none flex items-center justify-between text-sm">
               <span>Can other players still see my real username?</span>
-              <span className="text-xs sm:text-sm text-slate-600 pt-2 leading-relaxed">
-                Yes. Even if you have a custom Display Name, your real username will still appear under your profile with an &ldquo;@&rdquo; symbol (e.g. <code>Display Name (@Username)</code>). Friends can search for you using either your username or display name.
-              </p>
+              <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+            </summary>
+            <p className="text-xs sm:text-sm text-slate-600 pt-2 leading-relaxed">
+              Yes. Even if you have a custom Display Name, your real username will still appear under your profile with an &ldquo;@&rdquo; symbol (e.g. <code>Display Name (@Username)</code>). Friends can search for you using either your username or display name.
+            </p>
           </details>
         </div>
       </section>
