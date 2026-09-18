@@ -330,25 +330,35 @@ Browse our **[PUBG & BGMI Tool](/pubg-names)** to craft your personalized BGMI h
   },
   {
     slug: 'mobile-legends-name-style-mlbb',
-    title: 'Mobile Legends MLBB Name Style ⚔️ Cool Mythic Nicknames',
+    title: 'Mobile Legends Name Style — 500+ MLBB Names | NameStylePro',
     description:
-      'Stand out in Mobile Legends: Bang Bang with stylish squad names, Japanese anime symbols, and Mythic glory titles ⚔️ 1-tap copy & paste ready!',
+      'Get 500+ cool Mobile Legends name style ideas for 2026. Mythic glory, squad tags, hero mains, symbols & colored name codes. 1-tap copy & paste for MLBB.',
     category: 'Mobile Legends',
-    readTime: '4 min read',
+    readTime: '9 min read',
     publishedAt: '2026-03-10',
     author: {
-      name: 'AZDeveloper',
-      role: 'Esports Gaming Analyst',
+      name: 'Arham Zahid',
+      role: 'Esports Gaming Analyst & Nickname Strategist',
     },
     keywords: [
       'mobile legends name style',
       'mlbb stylish name',
       'cool ml names copy paste',
+      'mlbb name style 2026',
+      'mobile legends squad names',
+      'mlbb colored name code',
+      'aesthetic mlbb names',
+      'japanese mlbb names',
+      'fanny main name style',
+      'chou freestyle name style',
+      'mythic glory names mlbb',
     ],
     content: `
-# Mobile Legends (MLBB) Name Style
+# Mobile Legends Name Style — 500+ Cool MLBB Names with Symbols (2026)
 
-In Mobile Legends: Bang Bang, reaching Mythic Glory is an achievement, and your nickname should reflect that prestige. Explore hundreds of Japanese aesthetic characters, wing symbols, and cursive lettering compatible with MLBB.
+In Mobile Legends: Bang Bang, reaching Mythic Glory is an achievement, and your nickname should reflect that prestige. Explore hundreds of Japanese aesthetic characters, wing symbols, squad prefixes, and colored text codes compatible with MLBB.
+
+Visit our dedicated **[Mobile Legends Name Style Guide](/blog/mobile-legends-name-style-mlbb)** to explore all 500+ copyable names and hex color codes!
     `,
   },
   {
@@ -419,6 +429,7 @@ export function getBlogPostBySlug(slug: string): BlogPost | undefined {
 const STATIC_BLOG_SLUGS = new Set([
   'stylish-names-for-free-fire',
   'free-fire-guild-names',
+  'mobile-legends-name-style-mlbb',
 ]);
 
 export function getAllBlogSlugs(): string[] {
