@@ -69,6 +69,13 @@ const SUB_CATEGORIES = [
     icon: Zap,
     color: 'text-rose-500 bg-rose-50 border-rose-100',
   },
+  {
+    title: 'Anime FF Styles',
+    href: '/anime-names',
+    desc: 'Kakashi, Gojo, Sukuna & Naruto tags formatted under 12 characters.',
+    icon: Swords,
+    color: 'text-violet-600 bg-violet-50 border-violet-100',
+  },
 ];
 
 const FAQS = [

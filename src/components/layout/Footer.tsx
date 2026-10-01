@@ -74,6 +74,11 @@ export function Footer() {
                   Attitude & Savage Names
                 </Link>
               </li>
+              <li>
+                <Link href="/anime-names" className="hover:text-brand-400 transition-colors text-purple-300 font-medium">
+                  Anime FF Names
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -81,6 +86,11 @@ export function Footer() {
           <div className="space-y-3">
             <h3 className="text-sm font-bold text-white uppercase tracking-wider">Gaming Silo</h3>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
+              <li>
+                <Link href="/anime-names" className="hover:text-brand-400 transition-colors text-purple-300 font-semibold">
+                  Anime Stylish Names
+                </Link>
+              </li>
               <li>
                 <Link href="/gaming-name-generator" className="hover:text-brand-400 transition-colors">
                   Gaming Name Generator

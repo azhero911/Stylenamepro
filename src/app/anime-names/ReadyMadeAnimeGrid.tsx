@@ -192,6 +192,124 @@ export function ReadyMadeAnimeGrid() {
         </div>
       </div>
 
+      {/* Quick Search Shortcut Tags */}
+      <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+        <span className="text-xs font-bold text-slate-500 mr-1 flex items-center gap-1">
+          <Zap className="w-3.5 h-3.5 text-amber-500 fill-amber-400" />
+          <span>Quick Filter:</span>
+        </span>
+        <button
+          type="button"
+          onClick={() => {
+            setSearchQuery('Kakashi');
+            setGameFilter('all');
+            setSelectedUniverse('naruto');
+            setVisibleCount(36);
+          }}
+          className={`text-xs px-2.5 py-1 rounded-full font-bold transition-all border ${
+            searchQuery.toLowerCase() === 'kakashi'
+              ? 'bg-brand-600 text-white border-brand-600 shadow-xs'
+              : 'bg-white text-slate-700 border-slate-200 hover:border-brand-400 hover:text-brand-600 shadow-2xs'
+          }`}
+        >
+          ⚡ Kakashi (Naruto)
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            setGameFilter('ff');
+            setSearchQuery('');
+            setSelectedUniverse('all');
+            setVisibleCount(36);
+          }}
+          className={`text-xs px-2.5 py-1 rounded-full font-bold transition-all border ${
+            gameFilter === 'ff' && !searchQuery
+              ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
+              : 'bg-white text-slate-700 border-slate-200 hover:border-emerald-400 hover:text-emerald-700 shadow-2xs'
+          }`}
+        >
+          🔥 Free Fire Style (≤12)
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            setSearchQuery('Gojo');
+            setGameFilter('all');
+            setSelectedUniverse('jjk-dark-anime');
+            setVisibleCount(36);
+          }}
+          className={`text-xs px-2.5 py-1 rounded-full font-bold transition-all border ${
+            searchQuery.toLowerCase() === 'gojo'
+              ? 'bg-brand-600 text-white border-brand-600 shadow-xs'
+              : 'bg-white text-slate-700 border-slate-200 hover:border-brand-400 hover:text-brand-600 shadow-2xs'
+          }`}
+        >
+          👁️ Gojo (JJK)
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            setSearchQuery('Itachi');
+            setGameFilter('all');
+            setSelectedUniverse('naruto');
+            setVisibleCount(36);
+          }}
+          className={`text-xs px-2.5 py-1 rounded-full font-bold transition-all border ${
+            searchQuery.toLowerCase() === 'itachi'
+              ? 'bg-brand-600 text-white border-brand-600 shadow-xs'
+              : 'bg-white text-slate-700 border-slate-200 hover:border-brand-400 hover:text-brand-600 shadow-2xs'
+          }`}
+        >
+          ⚔️ Itachi (Uchiha)
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            setSearchQuery('Sukuna');
+            setGameFilter('all');
+            setSelectedUniverse('jjk-dark-anime');
+            setVisibleCount(36);
+          }}
+          className={`text-xs px-2.5 py-1 rounded-full font-bold transition-all border ${
+            searchQuery.toLowerCase() === 'sukuna'
+              ? 'bg-brand-600 text-white border-brand-600 shadow-xs'
+              : 'bg-white text-slate-700 border-slate-200 hover:border-brand-400 hover:text-brand-600 shadow-2xs'
+          }`}
+        >
+          😈 Sukuna
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            setSearchQuery('Tanjiro');
+            setGameFilter('all');
+            setSelectedUniverse('demon-slayer');
+            setVisibleCount(36);
+          }}
+          className={`text-xs px-2.5 py-1 rounded-full font-bold transition-all border ${
+            searchQuery.toLowerCase() === 'tanjiro'
+              ? 'bg-brand-600 text-white border-brand-600 shadow-xs'
+              : 'bg-white text-slate-700 border-slate-200 hover:border-brand-400 hover:text-brand-600 shadow-2xs'
+          }`}
+        >
+          🌸 Tanjiro
+        </button>
+        {searchQuery && (
+          <button
+            type="button"
+            onClick={() => {
+              setSearchQuery('');
+              setSelectedUniverse('all');
+              setGameFilter('all');
+              setVisibleCount(36);
+            }}
+            className="text-xs px-2 py-0.5 text-slate-400 hover:text-rose-600 font-semibold transition-colors"
+          >
+            Clear ✕
+          </button>
+        )}
+      </div>
+
       {/* Universe Tabs with interactive scroll buttons and smooth wheel/drag scrolling */}
       <div className="relative group/tabs flex items-center">
         {/* Left Scroll Arrow Button */}

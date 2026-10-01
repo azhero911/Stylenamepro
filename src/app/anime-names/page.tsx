@@ -1,34 +1,94 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Sparkles, HelpCircle, ChevronRight, Swords } from 'lucide-react';
+import { Sparkles, HelpCircle, ChevronRight, Swords, Flame, Zap } from 'lucide-react';
 import { ReadyMadeAnimeGrid } from './ReadyMadeAnimeGrid';
+import { CopyCardGrid } from '@/components/seo/CopyCardGrid';
 import { AdSlot } from '@/components/ui/AdSlot';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Anime Stylish Name ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Free 2026',
+  title: 'Anime Stylish Name ⚡ FF Style & Copy Paste 🔥 2026',
   description:
-    '800+ Anime stylish names ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Naruto, Demon Slayer, Dragon Ball, JJK & One Piece fonts for Free Fire & PUBG ⚡ Free copy!',
+    '850+ Anime stylish names & FF style nicknames ⚡ Kakashi, Gojo, Itachi & Naruto tags with cool symbols ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ ready for Free Fire, edits & PUBG 🔥',
   alternates: {
     canonical: 'https://namestylepro.online/anime-names',
   },
   openGraph: {
-    title: 'Anime Stylish Name ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Free 2026',
+    title: 'Anime Stylish Name ⚡ FF Style & Copy Paste 🔥 2026',
     description:
-      '800+ Anime stylish names ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Naruto, Demon Slayer, Dragon Ball, JJK & One Piece fonts for Free Fire & PUBG ⚡ Free copy!',
+      '850+ Anime stylish names & FF style nicknames ⚡ Kakashi, Gojo, Itachi & Naruto tags with cool symbols ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ ready for Free Fire, edits & PUBG 🔥',
     url: 'https://namestylepro.online/anime-names',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Anime Stylish Name ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Free 2026',
+    title: 'Anime Stylish Name ⚡ FF Style & Copy Paste 🔥 2026',
     description:
-      '800+ Anime stylish names ★彡©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ 🔥 Naruto, Demon Slayer, Dragon Ball, JJK & One Piece fonts for Free Fire & PUBG ⚡ Free copy!',
+      '850+ Anime stylish names & FF style nicknames ⚡ Kakashi, Gojo, Itachi & Naruto tags with cool symbols ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ ready for Free Fire, edits & PUBG 🔥',
   },
 };
 
+const ANIME_FF_FEATURED_NAMES = [
+  // Kakashi Presets (Breakthrough Query: "stylish name kakashi" - Rank 8)
+  { name: '亗𝕶𝖆𝖐𝖆𝖘𝖍𝖎亗', category: 'kakashi', tag: 'FF 9/12' },
+  { name: '꧁⚡𝕶𝖆𝖐𝖆𝖘𝖍𝖎⚡꧂', category: 'kakashi', tag: 'FF 11/12' },
+  { name: '☬𝔎𝔞𝔨𝔞𝔰𝔥𝔦☬', category: 'kakashi', tag: 'FF 9/12' },
+  { name: '影 𝐊𝐚𝐤𝐚𝐬𝐡𝐢 影', category: 'kakashi', tag: 'FF 11/12' },
+  { name: '★彡𝓚𝓪𝓴𝓪𝓼𝓱𝓲彡★', category: 'kakashi', tag: 'FF 11/12' },
+  { name: '⚡Kakashi⚡', category: 'kakashi', tag: 'FF 9/12' },
+  { name: '꧁༒𝔎𝔞𝔨𝔞𝔰𝔥𝔦༒꧂', category: 'kakashi', tag: 'FF 11/12' },
+  { name: '彡𝓚𝓪𝓴𝓪𝓼𝓱𝓲彡', category: 'kakashi', tag: 'FF 9/12' },
+  { name: '★𝐊𝐚𝐤𝐚𝐬𝐡𝐢★', category: 'kakashi', tag: 'FF 9/12' },
+
+  // Free Fire Anime Style (Breakthrough Query: "anime name ff style" - Rank 5.5, "free fire anime name style" - Rank 8)
+  { name: '亗𝕴𝖙𝖆𝖈𝖍𝖎亗', category: 'ff-style', tag: 'FF 8/12' },
+  { name: '꧁⚡𝕲𝖔𝖏𝖔⚡꧂', category: 'ff-style', tag: 'FF 9/12' },
+  { name: '†𝕾𝖚𝖐𝖚𝖓𝖆†', category: 'ff-style', tag: 'FF 8/12' },
+  { name: '★彡𝓝𝓪𝓻𝓾𝓽𝓸彡★', category: 'ff-style', tag: 'FF 10/12' },
+  { name: '亗 𝓛𝓮𝓿𝓲 亗', category: 'ff-style', tag: 'FF 8/12' },
+  { name: '⚡𝔗𝔞𝔫𝔧𝔦𝔯𝔬⚡', category: 'ff-style', tag: 'FF 9/12' },
+  { name: '꧁☬𝖅𝖔𝖗𝖔☬꧂', category: 'ff-style', tag: 'FF 9/12' },
+  { name: '☬𝕲𝖔𝖐𝖚☬', category: 'ff-style', tag: 'FF 6/12' },
+  { name: '亗 𝕾𝖆𝖘𝖚𝖐𝖊 亗', category: 'ff-style', tag: 'FF 9/12' },
+  { name: '꧁༺𝕶𝖊𝖓 𝕶𝔞𝔫𝔢𝔨𝔦༻꧂', category: 'ff-style', tag: 'FF 12/12' },
+  { name: '★𝓡𝓮𝓷𝓰𝓸𝓴𝓾★', category: 'ff-style', tag: 'FF 9/12' },
+  { name: '亗 𝕸𝖆𝖉𝖆𝖗𝖆 亗', category: 'ff-style', tag: 'FF 9/12' },
+
+  // Anime Edits & Aesthetic (Breakthrough Query: "anime edits stylish name" - Rank 8)
+  { name: '『 ａｎｉｍｅ 』', category: 'edits', tag: 'Aesthetic' },
+  { name: '⚡ ｋａｋａｓｈｉ ⚡', category: 'edits', tag: 'Vaporwave' },
+  { name: '𝔳𝔦𝔩𝔩𝔞𝔦𝔫 ⚡', category: 'edits', tag: 'Dark Anime' },
+  { name: 'ɢᴏᴊᴏ 亗', category: 'edits', tag: 'Small Caps' },
+  { name: '☁️ 𝕶 𝖆 𝖌 𝖚 𝖞 𝖆 ☁️', category: 'edits', tag: 'Soft Spaced' },
+  { name: '꧁༺sᴀsᴜᴋᴇ༻꧂', category: 'edits', tag: 'Wings Edit' },
+  { name: '† ꜱ ᴜ ᴋ ᴜ ɴ ᴀ †', category: 'edits', tag: 'Attitude' },
+  { name: '彡 𝖉 𝖊 𝖒 𝖔 𝖓 彡', category: 'edits', tag: 'Aesthetic' },
+  { name: 'ɪᴛᴀᴄʜɪ ⚡ 999', category: 'edits', tag: 'Edit Tag' },
+];
+
+const ANIME_FF_CATEGORIES = [
+  { key: 'kakashi', label: 'Kakashi Styles (⚡)' },
+  { key: 'ff-style', label: 'FF Anime Style (≤12)' },
+  { key: 'edits', label: 'Anime Edits Style (🎬)' },
+];
+
 const ANIME_FAQS = [
+  {
+    question: 'How do I get a stylish name for Kakashi in Free Fire?',
+    answer:
+      'Kakashi Hatake is one of the most popular anime nicknames in Free Fire and PUBG. Because "Kakashi" is 7 characters, you can add 2 to 5 characters of stylish symbols while staying strictly within Free Fire\'s 12-character limit. Top trending styles include 亗𝕶𝖆𝖐𝖆𝖘𝖍𝖎亗 (9 chars), ☬𝔎𝔞𝔨𝔞𝔰𝔥𝔦☬ (9 chars), ꧁⚡𝕶𝖆𝖐𝖆𝖘𝖍𝖎⚡꧂ (11 chars), and 影 𝐊𝐚𝐤𝐚𝐬𝐡𝐢 影 (11 chars). All are pre-verified for Free Fire and Free Fire MAX and ready to copy above.',
+    answerNode: (
+      <span>
+        Kakashi Hatake is one of the most popular anime gamer tags. Because &quot;Kakashi&quot; is 7 characters, you can add 2 to 5 characters of stylish symbols while staying strictly within Free Fire&apos;s 12-character limit. Top trending styles include <code className="bg-slate-100 text-brand-700 px-1.5 py-0.5 rounded font-mono text-sm">亗𝕶𝖆𝖐𝖆𝖘𝖍𝖎亗</code> (9 chars), <code className="bg-slate-100 text-brand-700 px-1.5 py-0.5 rounded font-mono text-sm">☬𝔎𝔞𝔨𝔞𝔰𝔥𝔦☬</code> (9 chars), and <code className="bg-slate-100 text-brand-700 px-1.5 py-0.5 rounded font-mono text-sm">꧁⚡𝕶𝖆𝖐𝖆𝖘𝖍𝖎⚡꧂</code> (11 chars). All can be copied with 1 tap from our curated vault above.
+      </span>
+    ),
+  },
+  {
+    question: 'What are the best anime names for Free Fire edits & TikTok?',
+    answer:
+      'Anime video edits on TikTok, YouTube Shorts, and Instagram Reels often feature minimalist, spaced aesthetic, and vaporwave fonts with Japanese symbols like 『 ａｎｉｍｅ 』, ⚡ ｋａｋａｓｈｉ ⚡, and 𝔳𝔦𝔩𝔩𝔞𝔦𝔫 ⚡. These styles stand out in watermark logos and gaming montages.',
+  },
   {
     question: 'Can I use anime names in Free Fire?',
     answer:
@@ -123,6 +183,53 @@ export default function AnimeNamesPage() {
         <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed">
           Type your name and get hundreds of anime-inspired stylish fonts, Japanese-style symbols, and Naruto, Demon Slayer, and Dragon Ball themed name styles. Perfect for Free Fire, PUBG, BGMI, Instagram, and TikTok. One tap to copy, completely free.
         </p>
+      </section>
+
+      {/* FEATURED: FREE FIRE ANIME STYLISH NAMES & KAKASHI PRESETS */}
+      <section className="bg-white rounded-3xl p-6 md:p-8 border-2 border-purple-200/80 shadow-xs space-y-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="space-y-1">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200">
+              <Flame className="w-3.5 h-3.5 text-amber-600 fill-amber-500" />
+              <span>Trending Search Breakthroughs • FF ≤ 12 Limit Verified</span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+              Free Fire Anime Name Style & Kakashi Presets
+            </h2>
+          </div>
+          <span className="text-xs text-slate-500 font-medium">1-Tap Copy • Pre-Checked Length</span>
+        </div>
+
+        <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+          The most searched anime nicknames for Garena Free Fire and Free Fire MAX. Formatted with crowns (亗), thunderbolts (⚡), wings (꧁༺), and gothic fonts — all guaranteed under 12 characters so you don&apos;t waste diamonds.
+        </p>
+
+        <CopyCardGrid
+          items={ANIME_FF_FEATURED_NAMES}
+          categories={ANIME_FF_CATEGORIES}
+          charLimitWarning={12}
+          placeholder="Filter Kakashi, Gojo, FF style, or edits..."
+        />
+
+        {/* Free Fire Hub Cross-Link Callout */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 sm:p-5 bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50/60 rounded-2xl border border-amber-200">
+          <div className="space-y-1 text-center sm:text-left">
+            <h3 className="font-bold text-slate-900 text-sm sm:text-base flex items-center justify-center sm:justify-start gap-2">
+              <Flame className="w-4 h-4 text-amber-600 fill-amber-500" />
+              <span>Want more Free Fire Nicknames & Guild Tags?</span>
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-600">
+              Visit our Free Fire Hub for 500+ boss nicknames, crowns (亗), invisible space code, and guild names.
+            </p>
+          </div>
+          <Link
+            href="/free-fire-names"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs sm:text-sm transition-all shadow-sm shrink-0"
+          >
+            <span>Explore Free Fire Hub</span>
+            <ChevronRight className="w-4 h-4" />
+          </Link>
+        </div>
       </section>
 
       {/* READY-MADE ANIME STYLISH NAMES VAULT (800+ NAMES) */}
