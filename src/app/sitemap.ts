@@ -187,6 +187,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.85,
     },
+    {
+      url: `${baseUrl}/blog/free-fire-anime-name-style`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
     // Utility & Legal Pages
     {
       url: `${baseUrl}/about`,

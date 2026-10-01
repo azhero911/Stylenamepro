@@ -4,6 +4,41 @@ import { BlogPost } from '@/types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'free-fire-anime-name-style',
+    title: '250+ Free Fire Anime Name Style (2026) ᐈ [Copy & Paste]',
+    description:
+      '250+ Free Fire anime name style ideas with cool fonts & symbols ⚡ Kakashi, Gojo, Sukuna & Nezuko tags. 1-tap ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ ready for FF & FF MAX 🔥',
+    category: 'Free Fire',
+    readTime: '9 min read',
+    publishedAt: '2026-10-01',
+    author: {
+      name: 'Arham Zahid',
+      role: 'Esports Nickname Strategist & Gaming Editor',
+    },
+    keywords: [
+      'free fire anime name style',
+      'anime name ff style',
+      'anime free fire name',
+      'stylish anime names for free fire',
+      'free fire anime name copy and paste',
+      'anime name ff style for boy',
+      'aesthetic ff anime names for girl',
+      'free fire stylish name anime',
+      'stylish name kakashi',
+      'gojo name style free fire',
+      'sukuna ff stylish name',
+      'itachi anime stylish name',
+      'free fire anime clan names with symbols',
+    ],
+    content: `
+# 250+ Free Fire Anime Name Style (2026)
+
+Upgrading your in-game identity with a **free fire anime name style** is one of the fastest ways to stand out in the kill feed and intimidate opponents in Garena Free Fire and Free Fire MAX.
+
+Browse over 250 verified nicknames ready for 1-tap copy and paste, complete with character limits pre-checked under 12 characters.
+    `,
+  },
+  {
     slug: 'stylish-names-for-free-fire',
     title: '1000+ Free Fire Stylish Names ★ ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 🔥 2026',
     description:
@@ -458,6 +493,7 @@ export function getBlogPostBySlug(slug: string): BlogPost | undefined {
 }
 
 const STATIC_BLOG_SLUGS = new Set([
+  'free-fire-anime-name-style',
   'stylish-names-for-free-fire',
   'free-fire-guild-names',
   'mobile-legends-name-style-mlbb',

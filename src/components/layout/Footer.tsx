@@ -79,6 +79,11 @@ export function Footer() {
                   Anime FF Names
                 </Link>
               </li>
+              <li>
+                <Link href="/blog/free-fire-anime-name-style" className="hover:text-brand-400 transition-colors text-amber-300 font-medium">
+                  Anime FF Guide
+                </Link>
+              </li>
             </ul>
           </div>
 

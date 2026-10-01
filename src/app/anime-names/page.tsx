@@ -557,14 +557,21 @@ export default function AnimeNamesPage() {
             creates a blank nickname using special Unicode characters — the ultimate mystery identity for any anime fan who wants to be the unnamed villain of the lobby.
           </p>
           <p>
-            For tips on picking the best name for your play style, the{' '}
+            Looking for pre-made Free Fire presets? Read our in-depth guide on{' '}
             <Link
-              href="https://namestylepro.online/blog"
+              href="/blog/free-fire-anime-name-style"
+              className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
+            >
+              250+ Free Fire Anime Name Style Ideas
+            </Link>{' '}
+            with Kakashi, Gojo, and Sukuna copyable cards. You can also explore the{' '}
+            <Link
+              href="/blog"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
               NameStylePro blog
             </Link>{' '}
-            has guides on Free Fire naming strategy, how to match your name to your gaming identity, and the latest anime name trends in 2026.
+            for gaming naming strategies, clan tag trends, and character counter tutorials.
           </p>
         </div>
       </section>
