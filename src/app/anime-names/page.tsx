@@ -2,30 +2,31 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Sparkles, HelpCircle, ChevronRight, Swords, Flame, Zap } from 'lucide-react';
+import { AnimeToolClient } from './AnimeToolClient';
 import { ReadyMadeAnimeGrid } from './ReadyMadeAnimeGrid';
 import { CopyCardGrid } from '@/components/seo/CopyCardGrid';
 import { AdSlot } from '@/components/ui/AdSlot';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Anime Stylish Name ⚡ FF Style & Copy Paste 🔥 2026',
+  title: 'Anime Stylish Name Generator ⚡ Cool Fonts & Symbols 2026',
   description:
-    '850+ Anime stylish names & FF style nicknames ⚡ Kakashi, Gojo, Itachi & Naruto tags with cool symbols ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ ready for Free Fire, edits & PUBG 🔥',
+    'Generate 1000+ anime stylish names & cool nicknames ⚡ Naruto, Gojo, Kakashi & Demon Slayer fonts with katana & crown symbols for Free Fire, PUBG & IG 🔥',
   alternates: {
     canonical: 'https://namestylepro.online/anime-names',
   },
   openGraph: {
-    title: 'Anime Stylish Name ⚡ FF Style & Copy Paste 🔥 2026',
+    title: 'Anime Stylish Name Generator ⚡ Cool Fonts & Symbols 2026',
     description:
-      '850+ Anime stylish names & FF style nicknames ⚡ Kakashi, Gojo, Itachi & Naruto tags with cool symbols ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ ready for Free Fire, edits & PUBG 🔥',
+      'Generate 1000+ anime stylish names & cool nicknames ⚡ Naruto, Gojo, Kakashi & Demon Slayer fonts with katana & crown symbols for Free Fire, PUBG & IG 🔥',
     url: 'https://namestylepro.online/anime-names',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Anime Stylish Name ⚡ FF Style & Copy Paste 🔥 2026',
+    title: 'Anime Stylish Name Generator ⚡ Cool Fonts & Symbols 2026',
     description:
-      '850+ Anime stylish names & FF style nicknames ⚡ Kakashi, Gojo, Itachi & Naruto tags with cool symbols ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ ready for Free Fire, edits & PUBG 🔥',
+      'Generate 1000+ anime stylish names & cool nicknames ⚡ Naruto, Gojo, Kakashi & Demon Slayer fonts with katana & crown symbols for Free Fire, PUBG & IG 🔥',
   },
 };
 
@@ -181,8 +182,13 @@ export default function AnimeNamesPage() {
         </h1>
 
         <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed">
-          Type your name and get hundreds of anime-inspired stylish fonts, Japanese-style symbols, and Naruto, Demon Slayer, and Dragon Ball themed name styles. Perfect for Free Fire, PUBG, BGMI, Instagram, and TikTok. One tap to copy, completely free.
+          Type any name below to generate hundreds of anime-inspired font styles, katana symbols, and Naruto, Demon Slayer, and JJK frames in real-time. Verified for Free Fire (12 limit), PUBG, and Instagram. 1-tap to copy!
         </p>
+      </section>
+
+      {/* LIVE INTERACTIVE GENERATOR TOOL */}
+      <section>
+        <AnimeToolClient />
       </section>
 
       {/* FEATURED: FREE FIRE ANIME STYLISH NAMES & KAKASHI PRESETS */}

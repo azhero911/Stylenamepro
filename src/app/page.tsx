@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Zap, HelpCircle } from 'lucide-react';
+import { Zap, HelpCircle, Gamepad2, Swords, Flame, Sparkles, BookOpen, ChevronRight } from 'lucide-react';
 import { HomeGenerator } from '@/components/home/HomeGenerator';
 import { AdSlot } from '@/components/ui/AdSlot';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
@@ -455,27 +455,162 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION 9 — BLOG CTA */}
-      <section className="bg-white rounded-3xl p-6 md:p-10 border border-slate-200 shadow-xs space-y-4 text-slate-700 leading-relaxed">
-        <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
-          Learn More in the NameStylePro Blog
-        </h2>
-        <p className="text-base md:text-lg">
-          If you want to go deeper, the{' '}
+      {/* SECTION 9 — POPULAR GENERATORS & PRO GUIDES HUB */}
+      <section className="bg-white rounded-3xl p-6 md:p-10 border border-slate-200 shadow-xs space-y-6 text-slate-700 leading-relaxed">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <span className="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-3 py-1 rounded-full border border-brand-200/60 inline-block mb-2">
+              Featured Tools & Guides
+            </span>
+            <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+              Popular Name Generators & Gaming Guides
+            </h2>
+          </div>
           <Link
-            href="https://namestylepro.online/blog"
-            className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
+            href="/blog"
+            className="inline-flex items-center gap-1.5 text-sm font-bold text-brand-600 hover:text-brand-700 hover:underline shrink-0"
           >
-            NameStylePro blog
-          </Link>{' '}
-          covers everything from how to pick the best Free Fire name for your play style to complete guides on invisible names, clan naming strategies, and how Unicode fonts actually work.
+            Explore All Guides <ChevronRight className="w-4 h-4" />
+          </Link>
+        </div>
+
+        <p className="text-base text-slate-600">
+          Looking for platform-specific font rules and gaming aesthetics? Jump straight into our dedicated generator hubs and in-depth naming tutorials:
         </p>
-        <p className="text-base md:text-lg">
-          Some of the guides currently available include how to change your Free Fire name step by step, the best PUBG names for boys and girls in 2026, how to make your Instagram bio stand out using fancy fonts, and the complete guide to the invisible name trick for Free Fire updated for the current game version.
-        </p>
-        <p className="text-base md:text-lg text-slate-600">
-          New articles are published regularly, so if you are serious about your gaming identity or social media presence, the blog is worth checking back on.
-        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-1">
+          {/* Hub 1: Anime Names */}
+          <Link
+            href="/anime-names"
+            className="group p-5 rounded-2xl border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all bg-gradient-to-br from-slate-50 to-white flex flex-col justify-between"
+          >
+            <div className="space-y-2">
+              <div className="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold">
+                ⚔️
+              </div>
+              <h3 className="font-bold text-slate-900 group-hover:text-brand-600 transition-colors text-lg flex items-center gap-1.5">
+                Anime Name Generator
+                <ChevronRight className="w-4 h-4 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Generate 1,000+ anime font styles with Katana symbols, Demon Slayer kanji & Gojo/Kakashi vibes with live FF & PUBG length checks.
+              </p>
+            </div>
+            <span className="mt-4 text-xs font-semibold text-purple-600 group-hover:underline inline-block">
+              Open Anime Generator →
+            </span>
+          </Link>
+
+          {/* Hub 2: Roblox Generator */}
+          <Link
+            href="/roblox-name-generator"
+            className="group p-5 rounded-2xl border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all bg-gradient-to-br from-slate-50 to-white flex flex-col justify-between"
+          >
+            <div className="space-y-2">
+              <div className="w-10 h-10 rounded-xl bg-pink-100 text-pink-700 flex items-center justify-center font-bold">
+                ✨
+              </div>
+              <h3 className="font-bold text-slate-900 group-hover:text-brand-600 transition-colors text-lg flex items-center gap-1.5">
+                Roblox Name Generator
+                <ChevronRight className="w-4 h-4 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Clean, aesthetic, preppy, Y2K & emo display names tailored for Roblox gamers. Includes sub-hubs for boys and girls.
+              </p>
+            </div>
+            <span className="mt-4 text-xs font-semibold text-pink-600 group-hover:underline inline-block">
+              Open Roblox Hub →
+            </span>
+          </Link>
+
+          {/* Hub 3: Free Fire Generator */}
+          <Link
+            href="/free-fire-names"
+            className="group p-5 rounded-2xl border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all bg-gradient-to-br from-slate-50 to-white flex flex-col justify-between"
+          >
+            <div className="space-y-2">
+              <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold">
+                🔥
+              </div>
+              <h3 className="font-bold text-slate-900 group-hover:text-brand-600 transition-colors text-lg flex items-center gap-1.5">
+                Free Fire Stylish Names
+                <ChevronRight className="w-4 h-4 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                5,000+ badass FF clan tags, boss badges, crowns 亗 and sniper font symbols guaranteed under the 12-char limit.
+              </p>
+            </div>
+            <span className="mt-4 text-xs font-semibold text-amber-600 group-hover:underline inline-block">
+              Open Free Fire Hub →
+            </span>
+          </Link>
+
+          {/* Guide 1: Free Fire Anime Name Style */}
+          <Link
+            href="/blog/free-fire-anime-name-style"
+            className="group p-5 rounded-2xl border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all bg-white flex flex-col justify-between"
+          >
+            <div className="space-y-2">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-purple-600 bg-purple-50 px-2.5 py-0.5 rounded-full border border-purple-200/50 inline-block">
+                Anime FF Guide
+              </span>
+              <h3 className="font-bold text-slate-900 group-hover:text-brand-600 transition-colors text-base flex items-center gap-1.5">
+                250+ FF Anime Name Styles
+                <ChevronRight className="w-4 h-4 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Ready-to-copy Gojo, Sukuna, Kakashi & Itachi names with verified in-game symbol compatibility.
+              </p>
+            </div>
+            <span className="mt-3 text-xs font-semibold text-brand-600 group-hover:underline inline-block">
+              Read Anime FF Guide →
+            </span>
+          </Link>
+
+          {/* Guide 2: Roblox Display Names */}
+          <Link
+            href="/blog/roblox-display-names-ideas"
+            className="group p-5 rounded-2xl border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all bg-white flex flex-col justify-between"
+          >
+            <div className="space-y-2">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-2.5 py-0.5 rounded-full border border-pink-200/50 inline-block">
+                Roblox Ideas
+              </span>
+              <h3 className="font-bold text-slate-900 group-hover:text-brand-600 transition-colors text-base flex items-center gap-1.5">
+                500+ Aesthetic Roblox Names
+                <ChevronRight className="w-4 h-4 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                The ultimate handbook on Roblox display names vs usernames, 7-day cooldowns, and cute aesthetic naming trends.
+              </p>
+            </div>
+            <span className="mt-3 text-xs font-semibold text-brand-600 group-hover:underline inline-block">
+              Read Roblox Guide →
+            </span>
+          </Link>
+
+          {/* Guide 3: MLBB Styles */}
+          <Link
+            href="/blog/mobile-legends-name-style-mlbb"
+            className="group p-5 rounded-2xl border border-slate-200 hover:border-brand-300 hover:shadow-md transition-all bg-white flex flex-col justify-between"
+          >
+            <div className="space-y-2">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200/50 inline-block">
+                MLBB Guide
+              </span>
+              <h3 className="font-bold text-slate-900 group-hover:text-brand-600 transition-colors text-base flex items-center gap-1.5">
+                MLBB Name Styles & Color Codes
+                <ChevronRight className="w-4 h-4 text-slate-400 group-hover:translate-x-0.5 transition-transform" />
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                How to format Mobile Legends nicknames with bracket color codes, bold text, and small caps styling.
+              </p>
+            </div>
+            <span className="mt-3 text-xs font-semibold text-brand-600 group-hover:underline inline-block">
+              Read MLBB Guide →
+            </span>
+          </Link>
+        </div>
       </section>
 
       {/* SECTION 10 — FAQ (with FAQPage schema & collapsible accordion) */}
