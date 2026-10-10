@@ -34,12 +34,24 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-6 text-sm font-bold text-slate-600">
+          <nav className="hidden md:flex items-center gap-5 text-sm font-bold text-slate-600">
             <Link
               href="/"
               className="hover:text-brand-600 transition-colors"
             >
               Home
+            </Link>
+            <Link
+              href="/anime-names"
+              className="hover:text-brand-600 transition-colors text-purple-700 bg-purple-50 px-2.5 py-1 rounded-lg border border-purple-200/60"
+            >
+              ⚔️ Anime
+            </Link>
+            <Link
+              href="/roblox-name-generator"
+              className="hover:text-brand-600 transition-colors text-pink-700 bg-pink-50 px-2.5 py-1 rounded-lg border border-pink-200/60"
+            >
+              ✨ Roblox
             </Link>
             <Link
               href="/free-fire-names"
@@ -119,6 +131,20 @@ export function Header() {
               className="block px-3 py-2 rounded-xl text-base font-bold text-slate-800 hover:bg-brand-50 hover:text-brand-600"
             >
               🏠 Home
+            </Link>
+            <Link
+              href="/anime-names"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-3 py-2 rounded-xl text-base font-bold text-purple-700 bg-purple-50 hover:bg-purple-100"
+            >
+              ⚔️ Anime Names Generator
+            </Link>
+            <Link
+              href="/roblox-name-generator"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block px-3 py-2 rounded-xl text-base font-bold text-pink-700 bg-pink-50 hover:bg-pink-100"
+            >
+              ✨ Roblox Name Generator
             </Link>
             <Link
               href="/free-fire-names"

@@ -25,6 +25,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
     title: post.title,
     description: post.description,
     keywords: post.keywords,
+    alternates: {
+      canonical: `https://namestylepro.online/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,

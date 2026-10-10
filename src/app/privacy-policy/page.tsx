@@ -4,6 +4,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy — NameStylePro',
   description: 'Privacy Policy for NameStylePro. Details how we safeguard user data, advertising compliance, and cookie disclosures.',
+  alternates: {
+    canonical: 'https://namestylepro.online/privacy-policy',
+  },
 };
 
 export default function PrivacyPolicyPage() {

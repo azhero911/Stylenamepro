@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'PUBG Stylish Name ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ 👑 Best 2026',
   description:
     'Generate 500+ PUBG & BGMI stylish names ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ 👑 OP tags, conqueror symbols, sniper clans & aesthetic fonts 🔥 Up to 16 chars!',
+  alternates: {
+    canonical: 'https://namestylepro.online/pubg-names',
+  },
   keywords: [
     'pubg stylish name',
     'bgmi name style',

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Guild & Clan Names ꧁☬©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ☬꧂ 👑 FF PUBG 2026',
   description:
     '500+ Guild & Clan names ꧁☬©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ☬꧂ 👑 Squad tags, esports badges & attitude clan symbols for Free Fire & PUBG Mobile 🔥 Free!',
+  alternates: {
+    canonical: 'https://namestylepro.online/free-fire-clan-names',
+  },
   keywords: [
     'clan name generator',
     'free fire guild name generator',

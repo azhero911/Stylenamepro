@@ -4,6 +4,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms of Service — NameStylePro',
   description: 'Terms of Service and conditions of use for NameStylePro free stylish name generator.',
+  alternates: {
+    canonical: 'https://namestylepro.online/terms',
+  },
 };
 
 export default function TermsPage() {

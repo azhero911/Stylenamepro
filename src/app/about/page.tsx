@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'About Us — NameStylePro Creator & Mission',
   description:
     'Learn about NameStylePro, a high-performance open web utility engineered by AZDeveloper to provide free instant Unicode styling for global gamers.',
+  alternates: {
+    canonical: 'https://namestylepro.online/about',
+  },
 };
 
 export default function AboutPage() {

@@ -10,9 +10,6 @@ const siteUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  alternates: {
-    canonical: '/',
-  },
   title: {
     default: 'Stylish Name Generator #1 ↳ 😍 ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 🔥 Free',
     template: '%s',

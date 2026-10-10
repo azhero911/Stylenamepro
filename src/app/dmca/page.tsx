@@ -4,6 +4,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'DMCA & Trademark Disclaimer — NameStylePro',
   description: 'DMCA policy, trademark notices, and fair-use disclaimers for NameStylePro.',
+  alternates: {
+    canonical: 'https://namestylepro.online/dmca',
+  },
 };
 
 export default function DmcaPage() {

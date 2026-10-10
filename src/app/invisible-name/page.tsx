@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Invisible Name Free Fire ⓘⓝⓥⓘⓢⓘⓑⓛⓔ ©⓪ⓟⓨ 😈 2026',
   description:
     '100% working invisible name for Free Fire ⓘⓝⓥⓘⓢⓘⓑⓛⓔ ©⓪ⓟⓨ 😈 Blank nickname trick using Hangul Filler U+3164 🔥 1-tap copy & paste ready!',
+  alternates: {
+    canonical: 'https://namestylepro.online/free-fire-invisible-name',
+  },
   keywords: [
     'invisible name free fire',
     'free fire blank name copy paste',
