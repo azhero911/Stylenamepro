@@ -6,7 +6,11 @@ interface AdSlotProps {
   adSlotId?: string;
 }
 
+// Only renders when a real AdSense slot ID is provided.
+// Returns null for placeholder slots to avoid "Sponsored Content Area" text on live pages.
 export function AdSlot({ slotType = 'responsive', className = '', adSlotId }: AdSlotProps) {
+  if (!adSlotId) return null;
+
   const minHeight = slotType === 'rectangle' ? '250px' : slotType === 'banner' ? '90px' : '100px';
 
   return (
@@ -18,23 +22,14 @@ export function AdSlot({ slotType = 'responsive', className = '', adSlotId }: Ad
         contain: 'layout',
       }}
     >
-      <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
-        Advertisement
-      </div>
-      {adSlotId ? (
-        <ins
-          className="adsbygoogle"
-          style={{ display: 'block', width: '100%', height: '100%' }}
-          data-ad-client="ca-pub-placeholder"
-          data-ad-slot={adSlotId}
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        />
-      ) : (
-        <div className="flex items-center justify-center text-xs text-slate-400 py-3">
-          <span>Sponsored Content Area (AdSense Ready)</span>
-        </div>
-      )}
+      <ins
+        className="adsbygoogle"
+        style={{ display: 'block', width: '100%', height: '100%' }}
+        data-ad-client="ca-pub-3103070762949606"
+        data-ad-slot={adSlotId}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
     </aside>
   );
 }

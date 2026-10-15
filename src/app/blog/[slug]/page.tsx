@@ -24,7 +24,6 @@ export function generateMetadata({ params }: PageProps): Metadata {
   return {
     title: post.title,
     description: post.description,
-    keywords: post.keywords,
     alternates: {
       canonical: `https://namestylepro.online/blog/${post.slug}`,
     },

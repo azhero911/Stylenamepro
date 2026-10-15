@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ShieldCheck, Sparkles, MapPin } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 
 export function Footer() {
   return (
     <footer className="w-full bg-slate-900 text-slate-300 border-t border-slate-800 mt-20">
       <div className="max-w-6xl mx-auto px-4 py-16">
-        {/* Top Branding & Silo Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        {/* Top Branding & Link Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1: Brand Info */}
           <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5">
@@ -26,42 +26,22 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              The premier free stylish name generator and Unicode font decorator. Transform ordinary
-              nicknames into thousands of aesthetic, esports, and symbol designs with instant 1-tap copy.
+              Free stylish name generator using Unicode fonts. Works for Free Fire, PUBG, Roblox and Instagram. No login needed.
             </p>
-            <div className="flex items-center gap-2 text-xs text-slate-400 pt-1">
-              <Sparkles className="w-4 h-4 text-brand-400 shrink-0" />
-              <span>Free Online Gaming Nickname & Font Tool</span>
-            </div>
           </div>
 
-          {/* Column 2: Free Fire Silo */}
+          {/* Column 2: Free Fire & Gaming */}
           <div className="space-y-3">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Free Fire Silo</h3>
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Gaming</h3>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
               <li>
                 <Link href="/free-fire-names" className="hover:text-brand-400 transition-colors">
-                  Free Fire Names (FF Hub)
-                </Link>
-              </li>
-              <li>
-                <Link href="/free-fire-names-for-boys" className="hover:text-brand-400 transition-colors">
-                  Names for Boys
-                </Link>
-              </li>
-              <li>
-                <Link href="/free-fire-names-for-girls" className="hover:text-brand-400 transition-colors">
-                  Names for Girls
-                </Link>
-              </li>
-              <li>
-                <Link href="/free-fire-symbols" className="hover:text-brand-400 transition-colors">
-                  Free Fire Symbols
+                  Free Fire Names
                 </Link>
               </li>
               <li>
                 <Link href="/free-fire-invisible-name" className="hover:text-brand-400 transition-colors">
-                  Invisible Blank Name
+                  Invisible Name
                 </Link>
               </li>
               <li>
@@ -70,50 +50,18 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/free-fire-attitude-names" className="hover:text-brand-400 transition-colors">
-                  Attitude & Savage Names
+                <Link href="/pubg-names" className="hover:text-brand-400 transition-colors">
+                  PUBG & BGMI Names
                 </Link>
               </li>
               <li>
-                <Link href="/anime-names" className="hover:text-brand-400 transition-colors text-purple-300 font-medium">
-                  Anime FF Names
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog/free-fire-anime-name-style" className="hover:text-brand-400 transition-colors text-amber-300 font-medium">
-                  Anime FF Guide
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Gaming Silo */}
-          <div className="space-y-3">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Gaming Silo</h3>
-            <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
-              <li>
-                <Link href="/anime-names" className="hover:text-brand-400 transition-colors text-purple-300 font-semibold">
+                <Link href="/anime-names" className="hover:text-brand-400 transition-colors">
                   Anime Stylish Names
                 </Link>
               </li>
               <li>
-                <Link href="/gaming-name-generator" className="hover:text-brand-400 transition-colors">
-                  Gaming Name Generator
-                </Link>
-              </li>
-              <li>
-                <Link href="/cool-gaming-names" className="hover:text-brand-400 transition-colors">
-                  Cool Gaming Names
-                </Link>
-              </li>
-              <li>
-                <Link href="/unique-gaming-names" className="hover:text-brand-400 transition-colors">
-                  Unique Gamertags
-                </Link>
-              </li>
-              <li>
-                <Link href="/short-gaming-names" className="hover:text-brand-400 transition-colors">
-                  Short Gaming Names
+                <Link href="/roblox-name-generator" className="hover:text-brand-400 transition-colors">
+                  Roblox Names
                 </Link>
               </li>
               <li>
@@ -126,56 +74,16 @@ export function Footer() {
                   Pro Gaming Names
                 </Link>
               </li>
-              <li>
-                <Link href="/aesthetic-gaming-names" className="hover:text-brand-400 transition-colors">
-                  Aesthetic Gaming Names
-                </Link>
-              </li>
-              <li>
-                <Link href="/pubg-names" className="hover:text-brand-400 transition-colors">
-                  PUBG & BGMI Nicknames
-                </Link>
-              </li>
-              <li>
-                <Link href="/roblox-name-generator" className="hover:text-brand-400 transition-colors text-purple-300 font-medium">
-                  Roblox Name Generator
-                </Link>
-              </li>
-              <li>
-                <Link href="/roblox-names-for-boys" className="hover:text-brand-400 transition-colors">
-                  Roblox Names for Boys
-                </Link>
-              </li>
-              <li>
-                <Link href="/roblox-names-for-girls" className="hover:text-brand-400 transition-colors">
-                  Roblox Names for Girls
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog/roblox-display-names-ideas" className="hover:text-brand-400 transition-colors">
-                  Roblox Display Names
-                </Link>
-              </li>
             </ul>
           </div>
 
-          {/* Column 4: Social & Aesthetic Silo */}
+          {/* Column 3: Social & Aesthetic */}
           <div className="space-y-3">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Social & Fonts</h3>
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Social & Aesthetic</h3>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
               <li>
                 <Link href="/instagram-names" className="hover:text-brand-400 transition-colors">
-                  Instagram Names (Hub)
-                </Link>
-              </li>
-              <li>
-                <Link href="/instagram-name-generator" className="hover:text-brand-400 transition-colors">
-                  Instagram Name Generator
-                </Link>
-              </li>
-              <li>
-                <Link href="/aesthetic-username-generator" className="hover:text-brand-400 transition-colors">
-                  Aesthetic Generator
+                  Instagram Names
                 </Link>
               </li>
               <li>
@@ -184,20 +92,45 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#generator" className="hover:text-brand-400 transition-colors">
-                  Live Unicode Generator
+                <Link href="/blog" className="hover:text-brand-400 transition-colors">
+                  Blog & Guides
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/roblox-display-names-ideas" className="hover:text-brand-400 transition-colors">
+                  Roblox Display Names
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/mobile-legends-name-style-mlbb" className="hover:text-brand-400 transition-colors">
+                  MLBB Name Styles
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/free-fire-anime-name-style" className="hover:text-brand-400 transition-colors">
+                  Anime FF Name Style
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 5: Legal & Trust */}
+          {/* Column 4: Legal */}
           <div className="space-y-3">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Legal & Trust</h3>
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Legal</h3>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
               <li>
+                <Link href="/about" className="hover:text-brand-400 transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-brand-400 transition-colors">
+                  Contact
+                </Link>
+              </li>
+              <li>
                 <Link href="/privacy-policy" className="hover:text-brand-400 transition-colors">
-                  Privacy Policy (GDPR)
+                  Privacy Policy
                 </Link>
               </li>
               <li>
@@ -207,12 +140,8 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/dmca" className="hover:text-brand-400 transition-colors">
-                  DMCA Copyright Policy
+                  DMCA Policy
                 </Link>
-              </li>
-              <li className="pt-2 text-xs text-slate-500 leading-relaxed flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>SSL Encrypted & Safe</span>
               </li>
             </ul>
           </div>
@@ -229,8 +158,9 @@ export function Footer() {
             <div>
               &copy; {new Date().getFullYear()} NameStylePro.online — All rights reserved.
             </div>
-            <div className="flex items-center gap-4 text-slate-400">
-              <span>Fast • Free • No Ads Blocker Required</span>
+            <div className="flex items-center gap-2 text-slate-500 text-xs">
+              <ShieldCheck className="w-3.5 h-3.5 text-slate-500" />
+              <span>No data leaves your browser</span>
             </div>
           </div>
         </div>

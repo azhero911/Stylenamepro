@@ -1,9 +1,13 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Gamepad2, Sparkles, ShieldCheck, Flame, Heart, BookOpen, Layers } from 'lucide-react';
+import { Gamepad2, Sparkles, ShieldCheck, Flame, Heart, BookOpen, Layers, Swords } from 'lucide-react';
 import { SEO_REGISTRY } from '@/data/seo-registry';
-import { ROBLOX_HUB_NAMES, ROBLOX_HUB_CATEGORIES } from '@/data/roblox-content';
+import {
+  ROBLOX_HUB_NAMES,
+  ROBLOX_BOYS_NAMES,
+  ROBLOX_GIRLS_NAMES,
+} from '@/data/roblox-content';
 import { Breadcrumbs } from '@/components/seo/Breadcrumbs';
 import { CopyCardGrid } from '@/components/seo/CopyCardGrid';
 import { GeneratorCtaCard } from '@/components/seo/GeneratorCtaCard';
@@ -25,23 +29,30 @@ export const metadata: Metadata = {
     url: pageData.canonical,
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: pageData.title,
+    description: pageData.description,
+  },
 };
 
+// Merge all Roblox names into one comprehensive hub
+const ALL_ROBLOX_NAMES = [
+  ...ROBLOX_HUB_NAMES,
+  ...ROBLOX_BOYS_NAMES.map((n) => ({ ...n, category: 'boys' })),
+  ...ROBLOX_GIRLS_NAMES.map((n) => ({ ...n, category: 'girls' })),
+];
+
+const MERGED_ROBLOX_CATEGORIES = [
+  { key: 'aesthetic', label: 'Soft & Dreamy' },
+  { key: 'clean', label: 'Clean & Minimal' },
+  { key: 'preppy', label: 'Preppy & Y2K' },
+  { key: 'boys', label: 'Boys & Da Hood' },
+  { key: 'girls', label: 'Girls & Pastel' },
+  { key: 'pvp', label: 'Tryhard PvP' },
+];
+
 const ROBLOX_SUB_HUBS = [
-  {
-    title: 'Roblox Names for Boys',
-    href: '/roblox-names-for-boys',
-    desc: 'Da Hood PvP sweat tags, chill aesthetic boys, grunge, and one-word tags.',
-    icon: Flame,
-    color: 'text-blue-500 bg-blue-50 border-blue-100',
-  },
-  {
-    title: 'Roblox Names for Girls',
-    href: '/roblox-names-for-girls',
-    desc: 'Soft pastel, preppy Y2K, cottagecore fairy, baddie, and boba cafe tags.',
-    icon: Heart,
-    color: 'text-pink-500 bg-pink-50 border-pink-100',
-  },
   {
     title: 'Roblox Display Names Guide',
     href: '/blog/roblox-display-names-ideas',
@@ -50,18 +61,25 @@ const ROBLOX_SUB_HUBS = [
     color: 'text-purple-500 bg-purple-50 border-purple-100',
   },
   {
-    title: 'Aesthetic Username Generator',
-    href: '/aesthetic-username-generator',
-    desc: 'Generate small caps, spaced typography, and cursive bios in 1 click.',
+    title: 'Aesthetic Usernames',
+    href: '/aesthetic-usernames',
+    desc: 'Generate small caps, spaced typography, and clean aesthetic bios in 1 click.',
     icon: Sparkles,
     color: 'text-amber-500 bg-amber-50 border-amber-100',
   },
   {
-    title: 'Cool Gaming Names',
-    href: '/cool-gaming-names',
-    desc: 'Cyber tech, stealth shadow, and leader titles for all gaming platforms.',
+    title: 'Pro Gaming Names',
+    href: '/pro-gaming-names',
+    desc: 'Competitive esports handles, clan prefixes, and tournament tags.',
     icon: Layers,
     color: 'text-emerald-500 bg-emerald-50 border-emerald-100',
+  },
+  {
+    title: 'Anime Names',
+    href: '/anime-names',
+    desc: 'Katana frames, Japanese kanji, and anime character styles.',
+    icon: Swords,
+    color: 'text-violet-500 bg-violet-50 border-violet-100',
   },
 ];
 
@@ -74,7 +92,7 @@ const FAQS = [
   {
     question: 'What is the difference between a Roblox Username and a Display Name?',
     answer:
-      'Your Roblox Username (@username) is your unique account ID used for logins and mentions; changing it costs 1,000 Robux and it must follow strict alphanumeric rules (letters, numbers, max 1 underscore). Your Display Name is the name shown to other players in games and above your avatar\'s head; it can be changed for FREE once every 7 days (letters and numbers). Crucially, Display Names do NOT have to be unique, meaning you can finally use clean one-word aesthetic names like "Cloudy" or "Velvet" for free!',
+      'Your Roblox Username (@username) is your unique account ID used for logins and mentions; changing it costs 1,000 Robux and it must follow strict alphanumeric rules (letters, numbers, max 1 underscore). Your Display Name is the name shown to other players in games and above your avatar\'s head; it can be changed for FREE once every 7 days (letters and numbers). Crucially, Display Names do NOT have to be unique, meaning you can use clean one-word aesthetic names like "Cloudy" or "Velvet" for free!',
   },
   {
     question: 'How do I create an aesthetic Roblox username if my favorite name is taken?',
@@ -99,7 +117,7 @@ export default function RobloxNameGeneratorPage() {
       {/* Breadcrumbs */}
       <Breadcrumbs
         items={[
-          { label: 'Gaming', href: '/gaming-name-generator' },
+          { label: 'Home', href: '/' },
           { label: 'Roblox Name Generator' },
         ]}
       />
@@ -112,12 +130,11 @@ export default function RobloxNameGeneratorPage() {
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-          Roblox Name Generator
+          Roblox Name Generator — Aesthetic Display Names
         </h1>
 
         <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed">
-          Generate clean, dreamy, and aesthetic Roblox usernames and display tags.
-          Tailored specifically for Roblox culture — soft lowercase, preppy Y2K, Da Hood PvP sweat, and cute cottagecore.
+          Unlike battle royale games that rely heavily on aggressive wing symbols (꧁༺) and sharp weapon marks, Roblox player culture is centered around clean, minimalist aesthetics. From soft lowercase typography and spaced lettering to preppy Y2K tags, Da Hood PvP sweat handles, and cottagecore fairy themes, your Roblox name sets the tone for your virtual identity across Brookhaven, Adopt Me, Blox Fruits, and Da Hood. Understanding the difference between your official Roblox username and your display name is essential. Your account username (@handle) is permanent, unique across the entire 70-million-daily-player ecosystem, costs 1,000 Robux to change, and only accepts alphanumeric characters with a single underscore. In contrast, your display name is what other players see over your avatar in-game—it can be changed completely free once every 7 days (168-hour cooldown) and does not need to be unique! Explore our live generator and curated collections below to copy verified 3-to-20 character Roblox names in one tap.
         </p>
       </header>
 
@@ -127,11 +144,11 @@ export default function RobloxNameGeneratorPage() {
       {/* Roblox Sub-Hub Navigation */}
       <section className="space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-bold text-slate-900">Explore Roblox Name Collections</h2>
-          <span className="text-xs text-slate-500 font-medium">Curated by aesthetic</span>
+          <h2 className="text-xl font-bold text-slate-900">Explore Related Gaming & Aesthetic Guides</h2>
+          <span className="text-xs text-slate-500 font-medium">Curated resources</span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
           {ROBLOX_SUB_HUBS.map((hub) => {
             const Icon = hub.icon;
             return (
@@ -155,24 +172,84 @@ export default function RobloxNameGeneratorPage() {
         </div>
       </section>
 
-      {/* Curated Copy Grid */}
+      {/* Curated Copy Grid (Merged Categories) */}
       <section className="space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-bold text-slate-900">Trending Aesthetic Roblox Names</h2>
-          <span className="text-xs text-slate-500">1-Tap Copy • 3-20 Chars</span>
+          <h2 className="text-xl font-bold text-slate-900">Curated Aesthetic Roblox Names (3–20 Chars)</h2>
+          <span className="text-xs text-slate-500">1-Tap Copy • Pre-Checked Length</span>
         </div>
 
         <CopyCardGrid
-          items={ROBLOX_HUB_NAMES}
-          categories={ROBLOX_HUB_CATEGORIES}
-          placeholder="Search aesthetic Roblox names..."
+          items={ALL_ROBLOX_NAMES}
+          categories={MERGED_ROBLOX_CATEGORIES}
+          placeholder="Search soft, preppy, Da Hood, boys, or girls Roblox names..."
         />
+      </section>
+
+      {/* Unique Verified Section: Username vs Display Name Rules */}
+      <section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 space-y-6 text-slate-700 leading-relaxed shadow-xs">
+        <div className="space-y-2">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-purple-50 text-purple-800 border border-purple-200">
+            <ShieldCheck className="w-3.5 h-3.5 text-purple-600" />
+            <span>Verified Rules • October 2026</span>
+          </div>
+          <h2 className="text-2xl font-black text-slate-900 tracking-tight">
+            Roblox Username vs. Display Name: Key Differences
+          </h2>
+          <p className="text-sm sm:text-base text-slate-600">
+            Roblox gives every player two separate identities. Here is how they compare based on official Roblox Help Center guidelines:
+          </p>
+        </div>
+
+        <div className="overflow-x-auto rounded-2xl border border-slate-200">
+          <table className="w-full text-left text-sm text-slate-700">
+            <thead className="bg-slate-100 text-slate-900 font-bold text-xs uppercase tracking-wider">
+              <tr>
+                <th className="px-4 py-3">Feature</th>
+                <th className="px-4 py-3">Official Username (@handle)</th>
+                <th className="px-4 py-3">Display Name (In-Game Tag)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-200 bg-white">
+              <tr>
+                <td className="px-4 py-3 font-semibold text-slate-900">Cost to Change</td>
+                <td className="px-4 py-3 text-rose-600 font-medium">1,000 Robux (~$12.50 USD)</td>
+                <td className="px-4 py-3 text-emerald-600 font-medium">100% Free</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-semibold text-slate-900">Change Cooldown</td>
+                <td className="px-4 py-3">Anytime (if Robux balance allows)</td>
+                <td className="px-4 py-3">Once every 7 days (168 hours)</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-semibold text-slate-900">Uniqueness</td>
+                <td className="px-4 py-3">Must be completely unique sitewide</td>
+                <td className="px-4 py-3 text-emerald-600 font-medium">Non-unique (multiple players can share it)</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-semibold text-slate-900">Length Constraint</td>
+                <td className="px-4 py-3">3 to 20 characters</td>
+                <td className="px-4 py-3">3 to 20 characters</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-semibold text-slate-900">Allowed Characters</td>
+                <td className="px-4 py-3">Letters (A-Z), numbers (0-9), max 1 underscore</td>
+                <td className="px-4 py-3">Letters, numbers, aesthetic spacing (filtered)</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-semibold text-slate-900">Where Displayed</td>
+                <td className="px-4 py-3">Profile URL, account login, @mentions</td>
+                <td className="px-4 py-3">Over avatar head in-game, match leaderboards</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       {/* Generator CTA Card */}
       <GeneratorCtaCard
         title="Looking for Fancy Unicode Fonts for Your Display Name?"
-        description="Try our full Unicode font studio to preview 1,000+ cursive scripts, small caps, spaced typography, and clean aesthetic bios."
+        description="Try our full Unicode font studio to preview cursive scripts, small caps, spaced typography, and clean aesthetic bios."
         buttonText="Open Live Font Studio"
       />
 
@@ -183,7 +260,7 @@ export default function RobloxNameGeneratorPage() {
             The Aesthetic Roblox Naming Formula
           </h2>
           <p className="text-sm sm:text-base text-slate-600">
-            Why seasoned Roblox players choose subtle aesthetics over tacky symbols:
+            Why seasoned Roblox players choose subtle aesthetics over chaotic symbols:
           </p>
         </div>
 
@@ -207,15 +284,6 @@ export default function RobloxNameGeneratorPage() {
             <p className="text-slate-600 text-xs leading-relaxed">
               Adding a second vowel (e.g. <em>cozyy</em>, <em>peachyhoney</em>) or single framing underscores keeps the name aesthetic while easily passing Roblox&apos;s username availability check.
             </p>
-          </div>
-        </div>
-
-        <div className="bg-purple-50/80 border border-purple-200/80 rounded-2xl p-4 flex items-start gap-3 text-xs text-purple-900 leading-relaxed">
-          <ShieldCheck className="w-5 h-5 text-purple-600 shrink-0 mt-0.5" />
-          <div>
-            <strong className="font-bold">Roblox Username Constraints:</strong> Official Roblox usernames must be
-            between 3 and 20 characters and may only contain letters (a-z, A-Z), numbers (0-9), and at most one underscore.
-            Display Names allow letters and numbers (no spaces or special symbols) with a 7-day free cooldown between edits.
           </div>
         </div>
       </section>

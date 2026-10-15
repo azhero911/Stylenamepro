@@ -4,9 +4,9 @@ import { BLOG_POSTS } from '@/data/blog-posts';
 import { BlogIndexClient } from '@/components/blog/BlogIndexClient';
 
 export const metadata: Metadata = {
-  title: 'Gaming Nickname Guides ↳ ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 🔥 2026',
+  title: 'Gaming Nickname Guides & Name Style Tips — NameStylePro',
   description:
-    'Read expert guides on Free Fire stylish names, PUBG tags, invisible nickname tricks & bio font strategies 🔥 1-tap ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 2026!',
+    'Expert guides on Free Fire stylish names, Roblox display ideas, PUBG Mobile tags, and bio fonts. Verified nickname rules and copy-ready presets.',
   alternates: {
     canonical: 'https://namestylepro.online/blog',
   },

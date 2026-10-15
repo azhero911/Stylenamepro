@@ -31,19 +31,6 @@ export const metadata: Metadata = {
   title: 'Mobile Legends Name Style — 500+ MLBB Names | NameStylePro',
   description:
     'Get 500+ cool Mobile Legends name style ideas for 2026. Mythic glory, squad tags, hero mains, symbols & colored name codes. 1-tap copy & paste for MLBB.',
-  keywords: [
-    'mobile legends name style',
-    'mlbb stylish name',
-    'cool ml names copy paste',
-    'mlbb name style 2026',
-    'mobile legends squad names',
-    'mlbb colored name code',
-    'aesthetic mlbb names',
-    'japanese mlbb names',
-    'fanny main name style',
-    'chou freestyle name style',
-    'mythic glory names mlbb',
-  ],
   alternates: {
     canonical: 'https://namestylepro.online/blog/mobile-legends-name-style-mlbb',
   },
@@ -54,8 +41,8 @@ export const metadata: Metadata = {
     url: 'https://namestylepro.online/blog/mobile-legends-name-style-mlbb',
     type: 'article',
     publishedTime: '2026-03-10T00:00:00.000Z',
-    modifiedTime: '2026-09-18T00:00:00.000Z',
-    authors: ['Arham Zahid'],
+    modifiedTime: '2026-10-15T00:00:00.000Z',
+    authors: ['AZDeveloper'],
     images: [
       {
         url: 'https://namestylepro.online/images/blog/mlbb-name-style-header-2026.jpg',

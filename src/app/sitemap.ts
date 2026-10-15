@@ -1,20 +1,18 @@
 import { MetadataRoute } from 'next';
-import { getAllBlogSlugs } from '@/data/blog-posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Primary production domain (non-www)
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://namestylepro.online';
   const now = new Date();
 
-  // Static tool & landing pages
-  const staticRoutes: MetadataRoute.Sitemap = [
+  return [
+    // ── Core ─────────────────────────────────────────────────────────────────
     {
       url: `${baseUrl}/`,
       lastModified: now,
       changeFrequency: 'daily',
       priority: 1.0,
     },
-    // Free Fire Silo
+    // ── Free Fire cluster ─────────────────────────────────────────────────────
     {
       url: `${baseUrl}/free-fire-names`,
       lastModified: now,
@@ -22,27 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/free-fire-names-for-boys`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/free-fire-names-for-girls`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/free-fire-symbols`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
       url: `${baseUrl}/free-fire-invisible-name`,
       lastModified: now,
-      changeFrequency: 'weekly',
+      changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
@@ -52,32 +32,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/free-fire-attitude-names`,
+      url: `${baseUrl}/free-fire-symbols`,
       lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
+      changeFrequency: 'monthly',
+      priority: 0.75,
     },
-    // Gaming Silo
+    // ── Anime & gaming ────────────────────────────────────────────────────────
     {
-      url: `${baseUrl}/gaming-name-generator`,
+      url: `${baseUrl}/anime-names`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/cool-gaming-names`,
+      url: `${baseUrl}/pubg-names`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/unique-gaming-names`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/short-gaming-names`,
+      url: `${baseUrl}/roblox-name-generator`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.85,
@@ -86,60 +60,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/3-letter-gaming-names`,
       lastModified: now,
       changeFrequency: 'weekly',
-      priority: 0.85,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/pro-gaming-names`,
       lastModified: now,
       changeFrequency: 'weekly',
-      priority: 0.85,
+      priority: 0.8,
     },
-    {
-      url: `${baseUrl}/aesthetic-gaming-names`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/pubg-names`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    // Roblox Silo
-    {
-      url: `${baseUrl}/roblox-name-generator`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/roblox-names-for-boys`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/roblox-names-for-girls`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    // Social & Aesthetic Silo
+    // ── Social & aesthetic ────────────────────────────────────────────────────
     {
       url: `${baseUrl}/instagram-names`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/instagram-name-generator`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/aesthetic-username-generator`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.85,
@@ -148,15 +79,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/aesthetic-usernames`,
       lastModified: now,
       changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/anime-names`,
-      lastModified: now,
-      changeFrequency: 'weekly',
       priority: 0.8,
     },
-    // Blog Hub
+    // ── Blog ──────────────────────────────────────────────────────────────────
     {
       url: `${baseUrl}/blog`,
       lastModified: now,
@@ -170,30 +95,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/blog/stylish-names-for-free-fire`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/blog/free-fire-guild-names`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
       url: `${baseUrl}/blog/mobile-legends-name-style-mlbb`,
       lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/stylish-names-for-free-fire`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/blog/free-fire-anime-name-style`,
       lastModified: now,
-      changeFrequency: 'weekly',
+      changeFrequency: 'monthly',
       priority: 0.85,
     },
-    // Utility & Legal Pages
+    // ── Utility ───────────────────────────────────────────────────────────────
     {
       url: `${baseUrl}/about`,
       lastModified: now,
@@ -203,8 +122,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/contact`,
       lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.5,
+      changeFrequency: 'yearly',
+      priority: 0.4,
     },
     {
       url: `${baseUrl}/privacy-policy`,
@@ -225,14 +144,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
   ];
-
-  // Dynamic blog articles
-  const blogRoutes: MetadataRoute.Sitemap = getAllBlogSlugs().map((slug) => ({
-    url: `${baseUrl}/blog/${slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  }));
-
-  return [...staticRoutes, ...blogRoutes];
 }

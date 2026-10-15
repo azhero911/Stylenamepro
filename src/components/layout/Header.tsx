@@ -60,7 +60,7 @@ export function Header() {
               Free Fire
             </Link>
             <Link
-              href="/gaming-name-generator"
+              href="/pro-gaming-names"
               className="hover:text-brand-600 transition-colors"
             >
               Gaming
@@ -154,7 +154,7 @@ export function Header() {
               🎮 Free Fire Names
             </Link>
             <Link
-              href="/gaming-name-generator"
+              href="/pro-gaming-names"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-3 py-2 rounded-xl text-base font-bold text-slate-800 hover:bg-brand-50 hover:text-brand-600"
             >

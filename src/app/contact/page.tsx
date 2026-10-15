@@ -45,6 +45,24 @@ export default function ContactPage() {
         </p>
       </div>
 
+      <div className="bg-purple-50/70 border border-purple-200 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-sm">
+        <div className="flex items-center gap-3">
+          <div className="p-2.5 rounded-xl bg-purple-100 text-brand-700 shrink-0">
+            <Mail className="w-5 h-5" />
+          </div>
+          <div>
+            <p className="font-bold text-slate-900">Direct Email Support</p>
+            <p className="text-slate-600 text-xs">For partnerships, feedback, and technical support</p>
+          </div>
+        </div>
+        <a
+          href="mailto:contact@namestylepro.online"
+          className="px-4 py-2 bg-white rounded-xl border border-purple-200 font-bold text-brand-700 hover:bg-purple-50 text-xs sm:text-sm transition-colors"
+        >
+          contact@namestylepro.online
+        </a>
+      </div>
+
       <div className="bg-white rounded-3xl border-2 border-slate-200 p-6 md:p-10 shadow-sm">
         {submitted ? (
           <div className="text-center py-12 space-y-4">

@@ -9,24 +9,24 @@ import { AdSlot } from '@/components/ui/AdSlot';
 import { FaqJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Anime Stylish Name Generator ⚡ Cool Fonts & Symbols 2026',
+  title: 'Anime Stylish Name Generator — Cool Fonts & Symbols',
   description:
-    'Generate 1000+ anime stylish names & cool nicknames ⚡ Naruto, Gojo, Kakashi & Demon Slayer fonts with katana & crown symbols for Free Fire, PUBG & IG 🔥',
+    'Generate anime-style names with Gothic, Fraktur, cursive and katana-symbol fonts. Works in Free Fire (12-char limit), PUBG and Instagram.',
   alternates: {
     canonical: 'https://namestylepro.online/anime-names',
   },
   openGraph: {
-    title: 'Anime Stylish Name Generator ⚡ Cool Fonts & Symbols 2026',
+    title: 'Anime Stylish Name Generator — Cool Fonts & Symbols',
     description:
-      'Generate 1000+ anime stylish names & cool nicknames ⚡ Naruto, Gojo, Kakashi & Demon Slayer fonts with katana & crown symbols for Free Fire, PUBG & IG 🔥',
+      'Generate anime-style names with Gothic, Fraktur, cursive and katana-symbol fonts. Works in Free Fire (12-char limit), PUBG and Instagram.',
     url: 'https://namestylepro.online/anime-names',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Anime Stylish Name Generator ⚡ Cool Fonts & Symbols 2026',
+    title: 'Anime Stylish Name Generator — Cool Fonts & Symbols',
     description:
-      'Generate 1000+ anime stylish names & cool nicknames ⚡ Naruto, Gojo, Kakashi & Demon Slayer fonts with katana & crown symbols for Free Fire, PUBG & IG 🔥',
+      'Generate anime-style names with Gothic, Fraktur, cursive and katana-symbol fonts. Works in Free Fire (12-char limit), PUBG and Instagram.',
   },
 };
 
@@ -44,17 +44,17 @@ const ANIME_FF_FEATURED_NAMES = [
 
   // Free Fire Anime Style (Breakthrough Query: "anime name ff style" - Rank 5.5, "free fire anime name style" - Rank 8)
   { name: '亗𝕴𝖙𝖆𝖈𝖍𝖎亗', category: 'ff-style', tag: 'FF 8/12' },
-  { name: '꧁⚡𝕲𝖔𝖏𝖔⚡꧂', category: 'ff-style', tag: 'FF 9/12' },
+  { name: '꧁⚡𝕲𝖔𝖏𝖔⚡꧂', category: 'ff-style', tag: 'FF 8/12' },
   { name: '†𝕾𝖚𝖐𝖚𝖓𝖆†', category: 'ff-style', tag: 'FF 8/12' },
   { name: '★彡𝓝𝓪𝓻𝓾𝓽𝓸彡★', category: 'ff-style', tag: 'FF 10/12' },
   { name: '亗 𝓛𝓮𝓿𝓲 亗', category: 'ff-style', tag: 'FF 8/12' },
   { name: '⚡𝔗𝔞𝔫𝔧𝔦𝔯𝔬⚡', category: 'ff-style', tag: 'FF 9/12' },
-  { name: '꧁☬𝖅𝖔𝖗𝖔☬꧂', category: 'ff-style', tag: 'FF 9/12' },
+  { name: '꧁☬𝖅𝖔𝖗𝖔☬꧂', category: 'ff-style', tag: 'FF 8/12' },
   { name: '☬𝕲𝖔𝖐𝖚☬', category: 'ff-style', tag: 'FF 6/12' },
-  { name: '亗 𝕾𝖆𝖘𝖚𝖐𝖊 亗', category: 'ff-style', tag: 'FF 9/12' },
-  { name: '꧁༺𝕶𝖊𝖓 𝕶𝔞𝔫𝔢𝔨𝔦༻꧂', category: 'ff-style', tag: 'FF 12/12' },
+  { name: '亗 𝕾𝖆𝖘𝖚𝖐𝖊 亗', category: 'ff-style', tag: 'FF 10/12' },
+  { name: '꧁༺𝕶𝖆𝖓𝖊𝖐𝖎༻꧂', category: 'ff-style', tag: 'FF 10/12' },
   { name: '★𝓡𝓮𝓷𝓰𝓸𝓴𝓾★', category: 'ff-style', tag: 'FF 9/12' },
-  { name: '亗 𝕸𝖆𝖉𝖆𝖗𝖆 亗', category: 'ff-style', tag: 'FF 9/12' },
+  { name: '亗 𝕸𝖆𝖉𝖆𝖗𝖆 亗', category: 'ff-style', tag: 'FF 10/12' },
 
   // Anime Edits & Aesthetic (Breakthrough Query: "anime edits stylish name" - Rank 8)
   { name: '『 ａｎｉｍｅ 』', category: 'edits', tag: 'Aesthetic' },
@@ -93,12 +93,12 @@ const ANIME_FAQS = [
   {
     question: 'Can I use anime names in Free Fire?',
     answer:
-      'Yes. Free Fire supports Unicode characters in nicknames. Anime-style names generated on NameStylePro work directly in the game. The key thing to watch is the 12-character limit, which the FF counter at the top of the page tracks in real time. Character names like Itachi (6 chars) and Sasuke (6 chars) fit within the limit with room for symbols on either side. Tanjiro (7 chars) and Kakashi (7 chars) also fit with minimal framing. Visit our Free Fire names page (https://namestylepro.online/free-fire-names) for anime styles pre-confirmed at 12 characters or fewer.',
+      'Yes. Free Fire supports Unicode characters in nicknames. Anime-style names generated on NameStylePro work directly in the game. The key thing to watch is the 12-character limit, which the FF counter at the top of the page tracks in real time. Character names like Itachi (6 chars) and Sasuke (6 chars) fit within the limit with room for symbols on either side. Tanjiro (7 chars) and Kakashi (7 chars) also fit with minimal framing. Visit our Free Fire names page (/free-fire-names) for anime styles pre-confirmed at 12 characters or fewer.',
     answerNode: (
       <span>
         Yes. Free Fire supports Unicode characters in nicknames. Anime-style names generated on NameStylePro work directly in the game. The key thing to watch is the 12-character limit, which the FF counter at the top of the page tracks in real time. Character names like Itachi (6 chars) and Sasuke (6 chars) fit within the limit with room for symbols on either side. Tanjiro (7 chars) and Kakashi (7 chars) also fit with minimal framing. Visit our{' '}
         <Link
-          href="https://namestylepro.online/free-fire-names"
+          href="/free-fire-names"
           className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
         >
           Free Fire names page
@@ -115,12 +115,12 @@ const ANIME_FAQS = [
   {
     question: 'Do anime font styles work on Instagram?',
     answer:
-      'Yes, most of them do. Instagram supports Unicode characters in both usernames and bios. Cursive and script styles like 𝓘𝓽𝓪𝓬𝓱𝓲 work particularly well for anime fan accounts. Heavy gothic styles with lots of symbol frames work better in bios than in usernames, where readability in search results still matters. See our Instagram names page (https://namestylepro.online/instagram-names) for anime-compatible social media styles.',
+      'Yes, most of them do. Instagram supports Unicode characters in both usernames and bios. Cursive and script styles like 𝓘𝓽𝓪𝓬𝓱𝓲 work particularly well for anime fan accounts. Heavy gothic styles with lots of symbol frames work better in bios than in usernames, where readability in search results still matters. See our Instagram names page (/instagram-names) for anime-compatible social media styles.',
     answerNode: (
       <span>
         Yes, most of them do. Instagram supports Unicode characters in both usernames and bios. Cursive and script styles like 𝓘𝓽𝓪𝓬𝓱𝓲 work particularly well for anime fan accounts. Heavy gothic styles with lots of symbol frames work better in bios than in usernames, where readability in search results still matters. See our{' '}
         <Link
-          href="https://namestylepro.online/instagram-names"
+          href="/instagram-names"
           className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
         >
           Instagram names page
@@ -142,12 +142,12 @@ const ANIME_FAQS = [
   {
     question: 'Can my whole squad have matching anime names?',
     answer:
-      'Yes. Visit the clan name maker (https://namestylepro.online/clan-names) and generate coordinated styles for your entire team. Many squads choose a theme — all Naruto characters, all Demon Slayer characters, all Dragon Ball characters — and generate matching font styles so the whole team looks unified in the lobby.',
+      'Yes. Visit the clan name maker (/free-fire-clan-names) and generate coordinated styles for your entire team. Many squads choose a theme — all Naruto characters, all Demon Slayer characters, all Dragon Ball characters — and generate matching font styles so the whole team looks unified in the lobby.',
     answerNode: (
       <span>
         Yes. Visit the{' '}
         <Link
-          href="https://namestylepro.online/clan-names"
+          href="/free-fire-clan-names"
           className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
         >
           clan name maker
@@ -174,7 +174,7 @@ export default function AnimeNamesPage() {
       <section className="text-center space-y-4 max-w-3xl mx-auto pt-2">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold bg-purple-50 text-brand-700 border border-purple-200/80 shadow-xs">
           <Swords className="w-4 h-4 text-brand-600 shrink-0" />
-          <span>800+ Anime Stylish Names & Fonts</span>
+          <span>1,000+ Anime Stylish Names & Fonts</span>
         </div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
@@ -182,7 +182,7 @@ export default function AnimeNamesPage() {
         </h1>
 
         <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed">
-          Type any name below to generate hundreds of anime-inspired font styles, katana symbols, and Naruto, Demon Slayer, and JJK frames in real-time. Verified for Free Fire (12 limit), PUBG, and Instagram. 1-tap to copy!
+          Anime stylish names give your gaming avatar an unmistakable presence across battle royale kill feeds and social media profiles. Inspired by legendary characters from Naruto, Demon Slayer, Jujutsu Kaisen, Dragon Ball, and Tokyo Ghoul, these names blend bold Fraktur scripts, cursive lettering, and Japanese-themed aesthetic symbols like katana blades, thunderbolts (⚡), and crowns (亗). Whether you are customizing a Free Fire nickname under Garena&apos;s strict 12-character limit, formatting a 16-character PUBG Mobile tag, or styling an aesthetic Instagram bio, our live generator transforms standard text into distinctive Unicode layouts in real-time. Every preset below is pre-tested to ensure it copies cleanly on Android, iOS, and PC without rendering question-mark boxes. Type your handle or favourite anime protagonist to generate matching tags instantly.
         </p>
       </section>
 
@@ -197,7 +197,7 @@ export default function AnimeNamesPage() {
           <div className="space-y-1">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200">
               <Flame className="w-3.5 h-3.5 text-amber-600 fill-amber-500" />
-              <span>Trending Search Breakthroughs • FF ≤ 12 Limit Verified</span>
+              <span>Free Fire Character Limit Verified (≤12)</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
               Free Fire Anime Name Style & Kakashi Presets
@@ -419,11 +419,56 @@ export default function AnimeNamesPage() {
       <section className="bg-white rounded-3xl p-6 md:p-10 border border-slate-200 shadow-xs space-y-6 text-slate-700 leading-relaxed">
         <div className="space-y-3">
           <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
-            Using Anime Names in Free Fire and PUBG
+            Using Anime Names in Free Fire, PUBG & Social Media
           </h2>
           <p className="text-base md:text-lg">
             Anime names are extremely popular in the South Asian Free Fire and PUBG community. Characters like Itachi, Sasuke, and Tanjiro appear in thousands of player profiles across both games. Here is how to use anime-style names in each game.
           </p>
+        </div>
+
+        {/* Unique Verified Platform Rules Table */}
+        <div className="overflow-x-auto rounded-2xl border border-slate-200">
+          <table className="w-full text-left text-sm text-slate-700">
+            <thead className="bg-slate-100 text-slate-900 font-bold text-xs uppercase tracking-wider">
+              <tr>
+                <th className="px-4 py-3">Platform</th>
+                <th className="px-4 py-3">Length Limit</th>
+                <th className="px-4 py-3">Unicode Support</th>
+                <th className="px-4 py-3">Rename Cost / Cooldown</th>
+                <th className="px-4 py-3">Source & Date Verified</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-200 bg-white">
+              <tr>
+                <td className="px-4 py-3 font-semibold text-slate-900">Garena Free Fire / MAX</td>
+                <td className="px-4 py-3">Max 12 chars</td>
+                <td className="px-4 py-3 text-emerald-600 font-medium">Full Unicode symbols (亗, ⚡, ꧁༺)</td>
+                <td className="px-4 py-3">390 Diamonds (or 39 Diamonds + 200 Guild Tokens)</td>
+                <td className="px-4 py-3 text-xs text-slate-500">Garena Support, Oct 2026</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-semibold text-slate-900">PUBG Mobile / BGMI</td>
+                <td className="px-4 py-3">Max 16 chars</td>
+                <td className="px-4 py-3 text-emerald-600 font-medium">Japanese characters, clan tags (么, 々)</td>
+                <td className="px-4 py-3">1 Rename Card (180 UC or Free via Missions)</td>
+                <td className="px-4 py-3 text-xs text-slate-500">KRAFTON FAQ, Oct 2026</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-semibold text-slate-900">Roblox (Display Name)</td>
+                <td className="px-4 py-3">3–20 chars</td>
+                <td className="px-4 py-3 text-amber-600 font-medium">Aesthetic fonts & spacing (Filtered)</td>
+                <td className="px-4 py-3">Free (7-Day Cooldown)</td>
+                <td className="px-4 py-3 text-xs text-slate-500">Roblox Help Center, Oct 2026</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-semibold text-slate-900">Instagram / TikTok Bio</td>
+                <td className="px-4 py-3">Up to 150 chars</td>
+                <td className="px-4 py-3 text-emerald-600 font-medium">All Mathematical Alphanumeric fonts</td>
+                <td className="px-4 py-3">Free anytime (14-day handle limit)</td>
+                <td className="px-4 py-3 text-xs text-slate-500">Platform Guidelines, Oct 2026</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <div className="space-y-3 pt-2 border-t border-slate-100">
@@ -432,12 +477,12 @@ export default function AnimeNamesPage() {
             Free Fire allows up to 12 characters in your nickname. This is actually the perfect length for most anime character names — Itachi is 6 characters, Sasuke is 6, Tanjiro is 7, Kakashi is 7. You have room for the name itself plus 4 to 5 characters worth of symbols or framing on either side.
           </p>
           <p className="text-base">
-            The best approach for an anime Free Fire name is to use one clean symbol before and after the character name. For example, ⚡Itachi⚡ is 9 characters and works within the Free Fire limit while looking clean and powerful on the kill feed.
+            The best approach for an anime Free Fire name is to use one clean symbol before and after the character name. For example, ⚡Itachi⚡ is 8 characters and works within the Free Fire limit while looking clean and powerful on the kill feed.
           </p>
           <p className="text-base">
             To generate your anime Free Fire name, type the character name into NameStylePro, filter to the Anime or Gothic category, and look for styles that the FF counter shows as 12 or fewer characters. Visit our dedicated{' '}
             <Link
-              href="https://namestylepro.online/free-fire-names"
+              href="/free-fire-names"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
               Free Fire names page
@@ -457,7 +502,7 @@ export default function AnimeNamesPage() {
           <p className="text-base">
             Visit our{' '}
             <Link
-              href="https://namestylepro.online/pubg-names"
+              href="/pubg-names"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
               PUBG and BGMI names page
@@ -477,7 +522,7 @@ export default function AnimeNamesPage() {
           <p className="text-base">
             Our{' '}
             <Link
-              href="https://namestylepro.online/instagram-names"
+              href="/instagram-names"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
               Instagram and TikTok names page
@@ -515,7 +560,7 @@ export default function AnimeNamesPage() {
           <p>
             If you play Free Fire, visit the{' '}
             <Link
-              href="https://namestylepro.online/free-fire-names"
+              href="/free-fire-names"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
               Free Fire name generator
@@ -525,7 +570,7 @@ export default function AnimeNamesPage() {
           <p>
             For PUBG and BGMI players, the{' '}
             <Link
-              href="https://namestylepro.online/pubg-names"
+              href="/pubg-names"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
               PUBG name generator
@@ -535,7 +580,7 @@ export default function AnimeNamesPage() {
           <p>
             To complete your social media identity, the{' '}
             <Link
-              href="https://namestylepro.online/instagram-names"
+              href="/instagram-names"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
               Instagram and TikTok names page
@@ -545,7 +590,7 @@ export default function AnimeNamesPage() {
           <p>
             If you want your team to have a coordinated anime-themed identity, the{' '}
             <Link
-              href="https://namestylepro.online/clan-names"
+              href="/free-fire-clan-names"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
               clan and guild name maker
@@ -555,7 +600,7 @@ export default function AnimeNamesPage() {
           <p>
             And for the completely unique approach, the{' '}
             <Link
-              href="https://namestylepro.online/invisible-name"
+              href="/free-fire-invisible-name"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
               invisible name generator

@@ -23,48 +23,36 @@ import { InvisibleNameBox } from "./InvisibleNameBox";
 import { AdSlot } from "@/components/ui/AdSlot";
 
 export const metadata: Metadata = {
-  title: "1000+ Free Fire Stylish Names ★ ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 🔥 2026",
+  title: '1000+ Free Fire Stylish Names — Copy & Paste FF Nicknames',
   description:
-    "1000+ Free Fire stylish names 🔥 Boys, Girls, Attitude, Anime & Guild ★彡 ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ ready — Updated September 2026",
-  keywords: [
-    "stylish names for free fire",
-    "free fire stylish name copy paste",
-    "free fire name style 2026",
-    "ff name for boys",
-    "ff name for girls",
-    "free fire attitude name",
-    "free fire anime name",
-    "free fire guild name",
-    "invisible name free fire",
-    "free fire nickname generator",
-  ],
+    '1000+ stylish names for Free Fire and Free Fire MAX. Cool boy, girl, attitude, and guild nicknames with symbols. Tested under the 12-char limit.',
   alternates: {
-    canonical: "https://namestylepro.online/blog/stylish-names-for-free-fire",
+    canonical: 'https://namestylepro.online/blog/stylish-names-for-free-fire',
   },
   openGraph: {
-    title: "1000+ Free Fire Stylish Names ★ ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 🔥 2026",
+    title: '1000+ Free Fire Stylish Names — Copy & Paste FF Nicknames',
     description:
-      "1000+ Free Fire stylish names 🔥 Boys, Girls, Attitude, Anime & Guild ★彡 ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ ready — Updated September 2026",
-    url: "https://namestylepro.online/blog/stylish-names-for-free-fire",
-    type: "article",
-    publishedTime: "2026-09-01T00:00:00.000Z",
-    modifiedTime: "2026-09-13T00:00:00.000Z",
-    authors: ["Arham Zahid"],
+      '1000+ stylish names for Free Fire and Free Fire MAX. Cool boy, girl, attitude, and guild nicknames with symbols. Tested under the 12-char limit.',
+    url: 'https://namestylepro.online/blog/stylish-names-for-free-fire',
+    type: 'article',
+    publishedTime: '2026-09-01T00:00:00.000Z',
+    modifiedTime: '2026-10-15T00:00:00.000Z',
+    authors: ['AZDeveloper'],
     images: [
       {
-        url: "https://namestylepro.online/images/blog/ff-stylish-names-header-2026.jpg",
+        url: 'https://namestylepro.online/images/blog/ff-stylish-names-header-2026.jpg',
         width: 1200,
         height: 675,
-        alt: "1000+ Best Stylish Names for Free Fire 2026",
+        alt: '1000+ Best Stylish Names for Free Fire',
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "1000+ Free Fire Stylish Names ★ ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ 🔥 2026",
+    card: 'summary_large_image',
+    title: '1000+ Free Fire Stylish Names — Copy & Paste FF Nicknames',
     description:
-      "1000+ Free Fire stylish names 🔥 Boys, Girls, Attitude, Anime & Guild ★彡 ©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ彡★ ready — Updated September 2026",
-    images: ["https://namestylepro.online/images/blog/ff-stylish-names-header-2026.jpg"],
+      '1000+ stylish names for Free Fire and Free Fire MAX. Cool boy, girl, attitude, and guild nicknames with symbols. Tested under the 12-char limit.',
+    images: ['https://namestylepro.online/images/blog/ff-stylish-names-header-2026.jpg'],
   },
 };
 

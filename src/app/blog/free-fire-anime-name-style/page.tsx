@@ -25,36 +25,21 @@ import { ArticleJsonLd, FaqJsonLd } from '@/components/seo/JsonLd';
 import { AdSlot } from '@/components/ui/AdSlot';
 
 export const metadata: Metadata = {
-  title: '250+ Free Fire Anime Name Style (2026) ᐈ [Copy & Paste]',
+  title: '250+ Free Fire Anime Name Style Ideas (2026) — Copy & Paste',
   description:
-    '250+ Free Fire anime name style ideas with cool fonts & symbols ⚡ Kakashi, Gojo, Sukuna & Nezuko tags. 1-tap ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ ready for FF & FF MAX 🔥',
-  keywords: [
-    'free fire anime name style',
-    'anime name ff style',
-    'anime free fire name',
-    'stylish anime names for free fire',
-    'free fire anime name copy and paste',
-    'anime name ff style for boy',
-    'aesthetic ff anime names for girl',
-    'free fire stylish name anime',
-    'stylish name kakashi',
-    'gojo name style free fire',
-    'sukuna ff stylish name',
-    'itachi anime stylish name',
-    'free fire anime clan names with symbols',
-  ],
+    '250+ Free Fire anime name styles. Copy Kakashi, Gojo, Sukuna, and Nezuko nickname tags with cool symbols and verified 12-character game limits.',
   alternates: {
     canonical: 'https://namestylepro.online/blog/free-fire-anime-name-style',
   },
   openGraph: {
-    title: '250+ Free Fire Anime Name Style (2026) ᐈ [Copy & Paste]',
+    title: '250+ Free Fire Anime Name Style Ideas (2026) — Copy & Paste',
     description:
-      '250+ Free Fire anime name style ideas with cool fonts & symbols ⚡ Kakashi, Gojo, Sukuna & Nezuko tags. 1-tap ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ ready for FF & FF MAX 🔥',
+      '250+ Free Fire anime name styles. Copy Kakashi, Gojo, Sukuna, and Nezuko nickname tags with cool symbols and verified 12-character game limits.',
     url: 'https://namestylepro.online/blog/free-fire-anime-name-style',
     type: 'article',
     publishedTime: '2026-10-01T00:00:00.000Z',
     modifiedTime: '2026-10-01T00:00:00.000Z',
-    authors: ['Arham Zahid'],
+    authors: ['AZDeveloper'],
     images: [
       {
         url: 'https://namestylepro.online/images/blog/ff-anime-name-style-header-2026.jpg',

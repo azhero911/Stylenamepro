@@ -15,13 +15,13 @@ export default function PrivacyPolicyPage() {
       <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
         Privacy Policy
       </h1>
-      <p className="text-sm text-slate-500">Last updated: March 2026</p>
+      <p className="text-sm text-slate-500">Last updated: October 2026</p>
 
       <div className="space-y-6 text-base md:text-lg">
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-slate-900">1. Overview</h2>
           <p>
-            At <strong>NameStylePro</strong> (accessible via namestylepro.online), accessible to visitors globally, the privacy of our visitors is of utmost importance. This Privacy Policy document outlines the types of information collected and how it is used.
+            At <strong>NameStylePro</strong> (accessible via namestylepro.online), the privacy of our visitors is of paramount importance. This Privacy Policy document outlines the types of information handled and clarifies our data-minimization practices. For any privacy questions, contact us at <code>contact@namestylepro.online</code>.
           </p>
         </section>
 

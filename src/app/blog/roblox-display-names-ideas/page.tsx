@@ -37,7 +37,6 @@ export const metadata: Metadata = {
     'roblox name generator',
     'roblox aesthetic names',
     'how to change roblox display name',
-  ],
   alternates: {
     canonical: 'https://namestylepro.online/blog/roblox-display-names-ideas',
   },
@@ -48,8 +47,8 @@ export const metadata: Metadata = {
     url: 'https://namestylepro.online/blog/roblox-display-names-ideas',
     type: 'article',
     publishedTime: '2026-09-18T00:00:00.000Z',
-    modifiedTime: '2026-09-18T00:00:00.000Z',
-    authors: ['Arham Zahid'],
+    modifiedTime: '2026-10-15T00:00:00.000Z',
+    authors: ['AZDeveloper'],
     images: [
       {
         url: 'https://namestylepro.online/images/blog/roblox-display-names-header-2026.jpg',
@@ -63,7 +62,7 @@ export const metadata: Metadata = {
 
 export default function RobloxDisplayNamesBlogPage() {
   const publishedDate = '2026-09-18';
-  const authorName = 'Arham Zahid';
+  const authorName = 'AZDeveloper';
 
   return (
     <article className="max-w-4xl mx-auto px-4 py-8 md:py-12 space-y-8">
