@@ -54,7 +54,7 @@ export default function ThreeLetterGamingNamesPage() {
       {/* Breadcrumbs */}
       <Breadcrumbs
         items={[
-          { label: 'Pro Gaming', href: '/pro-gaming-names' },
+          { label: 'Gaming', href: '/gaming-name-generator' },
           { label: '3 Letter Gaming Names' },
         ]}
       />

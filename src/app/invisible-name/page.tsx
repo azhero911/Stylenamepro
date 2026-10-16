@@ -8,7 +8,7 @@ import { RelatedPagesNav } from '@/components/seo/RelatedPagesNav';
 import { FaqAccordion } from '@/components/seo/FaqAccordion';
 import { InvisibleNameClient } from './InvisibleNameClient';
 
-const pageData = SEO_REGISTRY['free-fire-invisible-name'];
+const pageData = SEO_REGISTRY['invisible-name'];
 
 export const metadata: Metadata = {
   title: pageData.title,
@@ -165,7 +165,7 @@ export default function FreeFireInvisibleNamePage() {
       </section>
 
       {/* Internal Links */}
-      <RelatedPagesNav currentPageId="free-fire-invisible-name" />
+      <RelatedPagesNav currentPageId="invisible-name" />
 
       {/* FAQ */}
       <FaqAccordion faqs={FAQS} />

@@ -58,14 +58,14 @@ const SUB_CATEGORIES = [
   },
   {
     title: 'Invisible Blank Name',
-    href: '/free-fire-invisible-name',
+    href: '/invisible-name',
     desc: 'Verified Hangul Filler U+3164 method for blank lobby names.',
     icon: Ghost,
     color: 'text-slate-600 bg-slate-100 border-slate-200',
   },
   {
     title: 'Clan & Guild Tags',
-    href: '/free-fire-clan-names',
+    href: '/clan-names',
     desc: 'Esports squad titles, team prefixes, and tournament tags.',
     icon: Users,
     color: 'text-purple-600 bg-purple-50 border-purple-100',
@@ -229,7 +229,7 @@ export default function FreeFireNamesHubPage() {
           <div className="p-4 bg-slate-50 rounded-2xl border border-slate-200 space-y-2">
             <h3 className="font-bold text-slate-900 text-sm sm:text-base">Duplicate Name Solution</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              If your desired nickname is already registered by another player, you do not need to choose a different name. Add an invisible Hangul Filler space (<code>\u3164</code>) using our <Link href="/free-fire-invisible-name" className="text-brand-600 font-semibold underline">Invisible Name Tool</Link> to generate an entirely unique identifier that appears identical in the match lobby.
+              If your desired nickname is already registered by another player, you do not need to choose a different name. Add an invisible Hangul Filler space (<code>\u3164</code>) using our <Link href="/invisible-name" className="text-brand-600 font-semibold underline">Invisible Name Tool</Link> to generate an entirely unique identifier that appears identical in the match lobby.
             </p>
           </div>
 

@@ -59,7 +59,7 @@ export default function ProGamingNamesPage() {
       {/* Breadcrumbs */}
       <Breadcrumbs
         items={[
-          { label: 'Home', href: '/' },
+          { label: 'Gaming', href: '/gaming-name-generator' },
           { label: 'Pro Gaming Names' },
         ]}
       />

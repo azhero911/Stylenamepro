@@ -5,39 +5,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   return [
-    // ── Core ─────────────────────────────────────────────────────────────────
+    // ── Core Hub ─────────────────────────────────────────────────────────────
     {
       url: `${baseUrl}/`,
       lastModified: now,
       changeFrequency: 'daily',
       priority: 1.0,
     },
-    // ── Free Fire cluster ─────────────────────────────────────────────────────
-    {
-      url: `${baseUrl}/free-fire-names`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/free-fire-invisible-name`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/free-fire-clan-names`,
-      lastModified: now,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/free-fire-symbols`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.75,
-    },
-    // ── Anime & gaming ────────────────────────────────────────────────────────
+
+    // ── 13 Kept Tool Pages ────────────────────────────────────────────────────
     {
       url: `${baseUrl}/anime-names`,
       lastModified: now,
@@ -45,7 +21,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/free-fire-names`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/free-fire-symbols`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
       url: `${baseUrl}/pubg-names`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/invisible-name`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/clan-names`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.85,
@@ -63,12 +63,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/gaming-name-generator`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/pro-gaming-names`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-    // ── Social & aesthetic ────────────────────────────────────────────────────
     {
       url: `${baseUrl}/instagram-names`,
       lastModified: now,
@@ -81,7 +86,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-    // ── Blog ──────────────────────────────────────────────────────────────────
+
+    // ── Blog (Index + 4 Kept Articles) ────────────────────────────────────────
     {
       url: `${baseUrl}/blog`,
       lastModified: now,
@@ -101,18 +107,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/blog/stylish-names-for-free-fire`,
+      url: `${baseUrl}/blog/stylish-whatsapp-name-about-2026`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/blog/free-fire-anime-name-style`,
+      url: `${baseUrl}/blog/how-fancy-text-generators-work-unicode`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.85,
+      priority: 0.8,
     },
-    // ── Utility ───────────────────────────────────────────────────────────────
+
+    // ── Utility & Legal ───────────────────────────────────────────────────────
     {
       url: `${baseUrl}/about`,
       lastModified: now,

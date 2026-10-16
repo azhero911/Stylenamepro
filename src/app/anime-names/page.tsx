@@ -142,12 +142,12 @@ const ANIME_FAQS = [
   {
     question: 'Can my whole squad have matching anime names?',
     answer:
-      'Yes. Visit the clan name maker (/free-fire-clan-names) and generate coordinated styles for your entire team. Many squads choose a theme — all Naruto characters, all Demon Slayer characters, all Dragon Ball characters — and generate matching font styles so the whole team looks unified in the lobby.',
+      'Yes. Visit the clan name maker (/clan-names) and generate coordinated styles for your entire team. Many squads choose a theme — all Naruto characters, all Demon Slayer characters, all Dragon Ball characters — and generate matching font styles so the whole team looks unified in the lobby.',
     answerNode: (
       <span>
         Yes. Visit the{' '}
         <Link
-          href="/free-fire-clan-names"
+          href="/clan-names"
           className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
         >
           clan name maker
@@ -590,7 +590,7 @@ export default function AnimeNamesPage() {
           <p>
             If you want your team to have a coordinated anime-themed identity, the{' '}
             <Link
-              href="/free-fire-clan-names"
+              href="/clan-names"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
               clan and guild name maker
@@ -600,7 +600,7 @@ export default function AnimeNamesPage() {
           <p>
             And for the completely unique approach, the{' '}
             <Link
-              href="/free-fire-invisible-name"
+              href="/invisible-name"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
               invisible name generator
@@ -608,14 +608,14 @@ export default function AnimeNamesPage() {
             creates a blank nickname using special Unicode characters — the ultimate mystery identity for any anime fan who wants to be the unnamed villain of the lobby.
           </p>
           <p>
-            Looking for pre-made Free Fire presets? Read our in-depth guide on{' '}
+            Looking for pre-made Free Fire presets? Explore our{' '}
             <Link
-              href="/blog/free-fire-anime-name-style"
+              href="/free-fire-names"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"
             >
-              250+ Free Fire Anime Name Style Ideas
+              Free Fire Stylish Names Hub
             </Link>{' '}
-            with Kakashi, Gojo, and Sukuna copyable cards. You can also explore the{' '}
+            or visit the{' '}
             <Link
               href="/blog"
               className="text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2"

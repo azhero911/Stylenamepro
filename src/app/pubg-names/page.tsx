@@ -242,7 +242,7 @@ export default function PubgNamesPage() {
             Free Fire Names
           </Link>
           <Link
-            href="/free-fire-clan-names"
+            href="/clan-names"
             className="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold transition-colors"
           >
             Clan & Guild Names

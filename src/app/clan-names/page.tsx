@@ -9,7 +9,7 @@ import { GeneratorCtaCard } from '@/components/seo/GeneratorCtaCard';
 import { RelatedPagesNav } from '@/components/seo/RelatedPagesNav';
 import { FaqAccordion } from '@/components/seo/FaqAccordion';
 
-const pageData = SEO_REGISTRY['free-fire-clan-names'];
+const pageData = SEO_REGISTRY['clan-names'];
 
 export const metadata: Metadata = {
   title: pageData.title,
@@ -196,7 +196,7 @@ export default function FreeFireClanNamesPage() {
       </section>
 
       {/* Internal Links */}
-      <RelatedPagesNav currentPageId="free-fire-clan-names" />
+      <RelatedPagesNav currentPageId="clan-names" />
 
       {/* FAQ */}
       <FaqAccordion faqs={FAQS} />

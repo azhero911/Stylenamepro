@@ -26,13 +26,13 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Free stylish name generator using Unicode fonts. Works for Free Fire, PUBG, Roblox and Instagram. No login needed.
+              Free stylish name generator using Unicode fonts. Works for Free Fire, PUBG, Roblox, and Instagram. No login needed.
             </p>
           </div>
 
           {/* Column 2: Free Fire & Gaming */}
           <div className="space-y-3">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Gaming</h3>
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Gaming Hubs</h3>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
               <li>
                 <Link href="/free-fire-names" className="hover:text-brand-400 transition-colors">
@@ -40,13 +40,33 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/free-fire-invisible-name" className="hover:text-brand-400 transition-colors">
+                <Link href="/invisible-name" className="hover:text-brand-400 transition-colors">
                   Invisible Name
                 </Link>
               </li>
               <li>
-                <Link href="/free-fire-clan-names" className="hover:text-brand-400 transition-colors">
+                <Link href="/clan-names" className="hover:text-brand-400 transition-colors">
                   Clan & Squad Tags
+                </Link>
+              </li>
+              <li>
+                <Link href="/free-fire-symbols" className="hover:text-brand-400 transition-colors">
+                  Free Fire Symbols
+                </Link>
+              </li>
+              <li>
+                <Link href="/gaming-name-generator" className="hover:text-brand-400 transition-colors">
+                  Gaming Name Generator
+                </Link>
+              </li>
+              <li>
+                <Link href="/pro-gaming-names" className="hover:text-brand-400 transition-colors">
+                  Pro Gaming Names
+                </Link>
+              </li>
+              <li>
+                <Link href="/3-letter-gaming-names" className="hover:text-brand-400 transition-colors">
+                  3 Letter Gaming Names
                 </Link>
               </li>
               <li>
@@ -54,6 +74,13 @@ export function Footer() {
                   PUBG & BGMI Names
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Column 3: Social & Content */}
+          <div className="space-y-3">
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Social & Guides</h3>
+            <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
               <li>
                 <Link href="/anime-names" className="hover:text-brand-400 transition-colors">
                   Anime Stylish Names
@@ -64,23 +91,6 @@ export function Footer() {
                   Roblox Names
                 </Link>
               </li>
-              <li>
-                <Link href="/3-letter-gaming-names" className="hover:text-brand-400 transition-colors">
-                  3 Letter Gaming Names
-                </Link>
-              </li>
-              <li>
-                <Link href="/pro-gaming-names" className="hover:text-brand-400 transition-colors">
-                  Pro Gaming Names
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Social & Aesthetic */}
-          <div className="space-y-3">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Social & Aesthetic</h3>
-            <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
               <li>
                 <Link href="/instagram-names" className="hover:text-brand-400 transition-colors">
                   Instagram Names
@@ -106,17 +116,12 @@ export function Footer() {
                   MLBB Name Styles
                 </Link>
               </li>
-              <li>
-                <Link href="/blog/free-fire-anime-name-style" className="hover:text-brand-400 transition-colors">
-                  Anime FF Name Style
-                </Link>
-              </li>
             </ul>
           </div>
 
-          {/* Column 4: Legal */}
+          {/* Column 4: Legal & Contact */}
           <div className="space-y-3">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Legal</h3>
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider">Legal & Trust</h3>
             <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
               <li>
                 <Link href="/about" className="hover:text-brand-400 transition-colors">
