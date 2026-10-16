@@ -51,9 +51,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '250+ Free Fire Anime Name Style (2026) ᐈ [Copy & Paste]',
+    title: '250+ Free Fire Anime Name Style Ideas (2026) — Copy & Paste',
     description:
-      '250+ Free Fire anime name style ideas with cool fonts & symbols ⚡ Kakashi, Gojo, Sukuna & Nezuko tags. 1-tap ꧁©⓪ⓟⓨ & ⓟⓐⓢⓣⓔ꧂ ready for FF & FF MAX 🔥',
+      '250+ Free Fire anime name styles. Copy Kakashi, Gojo, Sukuna, and Nezuko nickname tags with cool symbols and verified 12-character game limits.',
     images: ['https://namestylepro.online/images/blog/ff-anime-name-style-header-2026.jpg'],
   },
 };

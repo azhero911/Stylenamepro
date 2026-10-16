@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Camera, ShieldCheck, Sparkles, Heart, Wand2, Gamepad2 } from 'lucide-react';
+import { Camera, ShieldCheck, Sparkles, Heart, Gamepad2 } from 'lucide-react';
 import { SEO_REGISTRY } from '@/data/seo-registry';
 import { INSTAGRAM_NAMES_LIST, INSTAGRAM_NAMES_CATEGORIES } from '@/data/social-content';
 import { Breadcrumbs } from '@/components/seo/Breadcrumbs';

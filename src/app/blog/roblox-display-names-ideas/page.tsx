@@ -26,17 +26,6 @@ export const metadata: Metadata = {
   title: '150+ Aesthetic Roblox Display Names (2026) | NameStylePro',
   description:
     'Explore 150+ aesthetic Roblox display names for 2026. Cute, preppy, Da Hood PvP, and matching duo tags ready to copy in 1 tap + free name change guide!',
-  keywords: [
-    'roblox display names ideas',
-    'aesthetic roblox display names',
-    'roblox display names for boys',
-    'roblox display names for girls',
-    'funny roblox display names',
-    'good roblox display names',
-    'matching roblox display names',
-    'roblox name generator',
-    'roblox aesthetic names',
-    'how to change roblox display name',
   alternates: {
     canonical: 'https://namestylepro.online/blog/roblox-display-names-ideas',
   },
